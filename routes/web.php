@@ -33,3 +33,7 @@ Route::get('/contact', function () {
     return view('contact');
 })->name('contact');
 
+Route::get('/entreprise', function () {
+    return view('company');
+})->name('company');
+
