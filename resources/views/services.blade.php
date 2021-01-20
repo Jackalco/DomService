@@ -14,7 +14,7 @@
         @include('layouts.nav')
         <main>
             <div>
-                Test
+                Services
             </div>
         </main>
         @include('layouts.footer')
