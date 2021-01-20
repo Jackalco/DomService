@@ -9,12 +9,12 @@
     <div id="footerAsideContainer">
         <div class="footerAside">
             <a class="footerAsideLink" href="{{ route('agencies') }}">Agences</a>
-            <a class="footerAsideLink" href="">L'entreprise</a>
-            <a class="footerAsideLink" href="">Recrutement</a>
-            <a class="footerAsideLink" href="">Contact</a>
+            <a class="footerAsideLink" href="{{ route('company') }}">L'entreprise</a>
+            <a class="footerAsideLink" href="{{ route('recruitment') }}">Recrutement</a>
+            <a class="footerAsideLink" href="{{ route('contact') }}">Contact</a>
         </div>
         <div class="footerAside">
-            <a class="footerAsideLink" href="">Services</a>
+            <a class="footerAsideLink" href="{{ route('services') }}">Services</a>
             <a class="footerAsideServiceLink" href="#">Entretien du logement</a>
             <a class="footerAsideServiceLink" href="#">Repassage</a>
             <a class="footerAsideServiceLink" href="#">Aide aux seniors</a>
@@ -23,7 +23,7 @@
             <a class="footerAsideServiceLink" href="#">Mise en relation avec nos prestataires</a>
         </div>
         <div class="footerAside">
-            <a id="legalNotice" href="#">Mentions légales</a>
+            <a id="legalNotice" href="{{ route('legal_notices') }}">Mentions légales</a>
         </div>
     </div>
 </footer>

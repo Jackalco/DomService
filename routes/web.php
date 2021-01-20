@@ -18,7 +18,7 @@ Route::get('/', function () {
 })->name('home');
 
 Route::get('/services', function () {
-    return view('services');
+    return view('services/services');
 })->name('services');
 
 Route::get('/agences', function () {
@@ -37,3 +37,6 @@ Route::get('/entreprise', function () {
     return view('company');
 })->name('company');
 
+Route::get('/mentions_legales', function () {
+    return view('legal_notices');
+})->name('legal_notices');
