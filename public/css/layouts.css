@@ -37,7 +37,7 @@ nav div:last-child {
     border-right: 1px solid gray;
     text-decoration: none;
     color: black;
-    padding: 15px;
+    padding: 18px;
     text-align: center;
     align-self: center;
     font-weight: bold;
@@ -155,7 +155,7 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(255, 255, 145);
+    background-color:rgb(255, 255, 192);
     border-radius: 3px;
     padding: 7px;
     width: 60%;
