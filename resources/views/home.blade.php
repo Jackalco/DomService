@@ -79,8 +79,20 @@
                     <a class="buttonAbout" href="">En savoir plus</a>
                 </div>
             </section>
-            <section class="linkFindAgencies">
-
+            <section id="linkFindAgencies">
+                <div id="containLinkFindAgencies">
+                    <div id="textLinkFindAgencies">
+                        <h4>Votre agence près de chez vous</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi feugiat sapien ornare, ultricies dui sed 
+                        </p>
+                        <br>
+                        <a class="buttonAbout" href="{{ route('agencies') }}">Trouvez une agence</a>
+                    </div>
+                    <div id="iconLinkFindAgencies">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                </div>
             </section>
         </main>
         @include('layouts.footer')

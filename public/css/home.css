@@ -106,12 +106,14 @@
     max-width: 450px;
     max-height: 300px;
     border-radius: 10px 0px 0px 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
 .demoRight .imageDemo {
     max-width: 450px;
     max-height: 300px;
     border-radius: 0px 10px 10px 0px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
 .demoLeft .textDemo {
@@ -122,6 +124,7 @@
     background-color:  rgb(255, 255, 145);
     border-radius: 0px 10px 10px 0px;
     padding: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
 .demoRight .textDemo {
@@ -132,6 +135,7 @@
     background-color:  rgb(255, 255, 145);
     border-radius: 10px 0px 0px 10px;
     padding: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
 hr {
@@ -147,8 +151,43 @@ hr {
     transition-duration: 0.5s;
     margin-top: 10px;
     border-radius: 2px;
+    transition-duration: 0.5s;
 }
 
 .buttonAbout:hover {
     background-color:  rgb(0, 0, 115);
+    box-shadow: 0 7px 8px 0 rgba(0,0,0,0.2);
+}
+
+#linkFindAgencies {
+    display: flex;
+    justify-content: center;  
+}
+
+#containLinkFindAgencies {
+    height: 200px;
+    width: 650px;
+    background-color: rgb(255, 255, 145);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+#iconLinkFindAgencies {
+    flex: 1;
+    color: rgb(29, 36, 115);
+    font-size: 150px;
+    text-align: center;
+    padding: 20px;
+}
+
+#textLinkFindAgencies {
+    padding: 20px;
+    flex: 1;
+    text-align: justify;
+}
+
+#textLinkFindAgencies p{
+    font-size: 10px;
 }

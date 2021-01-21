@@ -79,6 +79,21 @@
                     <a class="buttonAbout" href="">En savoir plus</a>
                 </div>
             </section>
+            <section id="linkFindAgencies">
+                <div id="containLinkFindAgencies">
+                    <div id="textLinkFindAgencies">
+                        <h4>Votre agence près de chez vous</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi feugiat sapien ornare, ultricies dui sed 
+                        </p>
+                        <br>
+                        <a class="buttonAbout" href="<?php echo e(route('agencies')); ?>">Trouvez une agence</a>
+                    </div>
+                    <div id="iconLinkFindAgencies">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                </div>
+            </section>
         </main>
         <?php echo $__env->make('layouts.footer', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
     </body>
