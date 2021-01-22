@@ -4,10 +4,10 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="{{ asset('css/layouts.css')}}">
-        <link rel="stylesheet" type="text/css" href="{{ asset('css/home.css')}}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/legal_notices.css')}}">
         <script src="https://kit.fontawesome.com/172e84d6d0.js" crossorigin="anonymous"></script>
 
-        <title>DOM Service</title>
+        <title>DOM Services</title>
 
     </head>
     <body>

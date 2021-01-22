@@ -1,4 +1,4 @@
-.demoLeft {
+.homeLeft {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -6,7 +6,7 @@
     margin-top: 20px;
 }
 
-.demoRight {
+.homeRight {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -14,53 +14,53 @@
     margin-top: 20px;
 }
 
-.demoLeft .imageDemo {
+.homeLeft .imageHome {
     border-radius: 10px 0px 0px 10px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
 @media screen and (max-width: 1920px) {
-    .demoLeft .imageDemo {
+    .homeLeft .imageHome {
         max-width: 750px;
         max-height: 400px;
     }
 }
 
 @media screen and (max-width: 1200px) {
-    .demoLeft .imageDemo {
+    .homeLeft .imageHome {
         max-width: 450px;
         max-height: 300px;
     }
 }
 
-.demoRight .imageDemo {
+.homeRight .imageHome {
     border-radius: 0px 10px 10px 0px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
 @media screen and (max-width: 1920px) {
-    .demoRight .imageDemo {
+    .homeRight .imageHome {
         max-width: 750px;
         max-height: 400px;
     }
 }
 
 @media screen and (max-width: 1200px) {
-    .demoRight .imageDemo {
+    .homeRight .imageHome {
         max-width: 450px;
         max-height: 300px;
     }
 }
 
-.demoLeft .textDemo {
+.homeLeft .textHome {
     text-align: justify;
-    background-color: rgb(255, 255, 192);
+    background-color:rgb(255, 255, 60);
     border-radius: 0px 10px 10px 0px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
 @media screen and (max-width: 1920px){
-    .demoLeft .textDemo {
+    .homeLeft .textHome {
         max-width: 300px;
         max-height: 400px;
         font-size: 13px;
@@ -69,7 +69,7 @@
 }
 
 @media screen and (max-width: 1200px){
-    .demoLeft .textDemo {
+    .homeLeft .textHome {
         max-width: 200px;
         max-height: 300px;
         font-size: 9px;
@@ -77,15 +77,15 @@
     }
 }
 
-.demoRight .textDemo {
+.homeRight .textHome {
     text-align: justify;
-    background-color: rgb(255, 255, 192);
+    background-color:rgb(255, 255, 60);
     border-radius: 10px 0px 0px 10px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
 @media screen and (max-width: 1920px){
-    .demoRight .textDemo {
+    .homeRight .textHome {
         max-width: 300px;
         max-height: 400px;
         font-size: 13px;
@@ -94,7 +94,7 @@
 }
 
 @media screen and (max-width: 1200px){
-    .demoRight .textDemo {
+    .homeRight .textHome {
         max-width: 200px;
         max-height: 300px;
         font-size: 9px;
@@ -110,7 +110,7 @@ hr {
 .buttonAbout {
     text-decoration: none;
     padding: 10px;
-    background-color: rgb(29, 36, 115);
+    background-color:rgb(29, 36, 115);
     color: white;
     transition-duration: 0.5s;
     margin-top: 10px;
@@ -141,7 +141,7 @@ hr {
 }
 
 .buttonAbout:hover {
-    background-color:  rgb(0, 0, 115);
+    background-color:   rgb(0, 0, 115);
     box-shadow: 0 7px 8px 0 rgba(0,0,0,0.2);
 }
 
@@ -151,7 +151,7 @@ hr {
 }
 
 #containLinkFindAgencies {
-    background-color:rgb(255, 255, 192);
+    background-color:rgb(255, 255, 60);
     border-radius: 10px;
     display: flex;
     flex-direction: row;

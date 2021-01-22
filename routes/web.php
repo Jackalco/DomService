@@ -37,6 +37,6 @@ Route::get('/entreprise', function () {
     return view('company');
 })->name('company');
 
-Route::get('/mentions_legales', function () {
+Route::get('/mentions-legales', function () {
     return view('legal_notices');
 })->name('legal_notices');
