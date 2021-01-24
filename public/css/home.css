@@ -4,6 +4,11 @@
     justify-content: center;
     margin-bottom: 20px;
     margin-top: 20px;
+    
+}
+
+.homeLeft:hover .textHome{
+    background-color:rgb(255, 255, 100);
 }
 
 .homeRight {
@@ -14,23 +19,13 @@
     margin-top: 20px;
 }
 
+.homeRight:hover .textHome{
+    background-color:rgb(255, 255, 100);
+}
+
 .homeLeft .imageHome {
     border-radius: 10px 0px 0px 10px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-}
-
-@media screen and (max-width: 1920px) {
-    .homeLeft .imageHome {
-        max-width: 750px;
-        max-height: 400px;
-    }
-}
-
-@media screen and (max-width: 1200px) {
-    .homeLeft .imageHome {
-        max-width: 450px;
-        max-height: 300px;
-    }
 }
 
 .homeRight .imageHome {
@@ -38,68 +33,20 @@
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
-@media screen and (max-width: 1920px) {
-    .homeRight .imageHome {
-        max-width: 750px;
-        max-height: 400px;
-    }
-}
-
-@media screen and (max-width: 1200px) {
-    .homeRight .imageHome {
-        max-width: 450px;
-        max-height: 300px;
-    }
-}
-
 .homeLeft .textHome {
     text-align: justify;
-    background-color:rgb(255, 255, 60);
+    background-color:rgb(255, 255, 160);
     border-radius: 0px 10px 10px 0px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-}
-
-@media screen and (max-width: 1920px){
-    .homeLeft .textHome {
-        max-width: 300px;
-        max-height: 400px;
-        font-size: 13px;
-        padding: 10px;
-    }
-}
-
-@media screen and (max-width: 1200px){
-    .homeLeft .textHome {
-        max-width: 200px;
-        max-height: 300px;
-        font-size: 9px;
-        padding: 8px;
-    }
+    transition-duration: 0.5s;
 }
 
 .homeRight .textHome {
     text-align: justify;
-    background-color:rgb(255, 255, 60);
+    background-color:rgb(255, 255, 160);
     border-radius: 10px 0px 0px 10px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-}
-
-@media screen and (max-width: 1920px){
-    .homeRight .textHome {
-        max-width: 300px;
-        max-height: 400px;
-        font-size: 13px;
-        padding: 10px;
-    }
-}
-
-@media screen and (max-width: 1200px){
-    .homeRight .textHome {
-        max-width: 200px;
-        max-height: 300px;
-        font-size: 9px;
-        padding: 8px;
-    }
+    transition-duration: 0.5s;
 }
 
 hr {
@@ -118,28 +65,6 @@ hr {
     transition-duration: 0.5s;
 }
 
-@media screen and (max-width: 1920px){
-    .buttonAbout {
-        font-size: 14px;
-        padding: 14px;
-    }
-
-    .buttonAbout:hover {
-        padding: 15px;
-    }
-}
-
-@media screen and (max-width: 1200px){
-    .buttonAbout {
-        font-size: 10px;
-        padding: 10px;
-    }
-
-    .buttonAbout:hover {
-        padding: 11px;
-    }
-}
-
 .buttonAbout:hover {
     background-color:   rgb(0, 0, 115);
     box-shadow: 0 7px 8px 0 rgba(0,0,0,0.2);
@@ -151,26 +76,18 @@ hr {
 }
 
 #containLinkFindAgencies {
-    background-color:rgb(255, 255, 60);
+    background-color:rgb(255, 255, 160);
     border-radius: 10px;
     display: flex;
     flex-direction: row;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition-duration: 0.5s;
 }
 
-@media screen and (max-width: 1920px){
-    #containLinkFindAgencies {
-        height: 250px;
-        width: 850px;
-    }
+#containLinkFindAgencies:hover {
+    background-color:rgb(255, 255, 100);
 }
 
-@media screen and (max-width: 1200px){
-    #containLinkFindAgencies {
-        height: 200px;
-        width: 650px;
-    }
-}
 
 #iconLinkFindAgencies {
     flex: 1;
@@ -186,14 +103,134 @@ hr {
     text-align: justify;
 }
 
-@media screen and (max-width: 1920px){
+@media only screen and (min-width: 1200px) {
+    .homeLeft .imageHome {
+        max-width: 750px;
+        max-height: 400px;
+    }
+
+    .homeRight .imageHome {
+        max-width: 750px;
+        max-height: 400px;
+    }
+
+    .homeLeft .textHome {
+        max-width: 300px;
+        max-height: 400px;
+        font-size: 13px;
+        padding: 10px;
+    }
+
+    .homeRight .textHome {
+        max-width: 300px;
+        max-height: 400px;
+        font-size: 13px;
+        padding: 10px;
+    }
+
+    .buttonAbout {
+        font-size: 14px;
+        padding: 14px;
+    }
+
+    .buttonAbout:hover {
+        padding: 15px;
+    }
+
+    #containLinkFindAgencies {
+        height: 250px;
+        width: 850px;
+    }
+
     #textLinkFindAgencies p{
         font-size: 14px;
     }
 }
 
-@media screen and (max-width: 1200px){
+@media only screen and (max-width: 1200px) {
+    .homeLeft .imageHome {
+        max-width: 450px;
+        max-height: 300px;
+    }
+
+    .homeRight .imageHome {
+        max-width: 450px;
+        max-height: 300px;
+    }
+
+    .homeLeft .textHome {
+        max-width: 200px;
+        max-height: 300px;
+        font-size: 9px;
+        padding: 8px;
+    }
+
+    .homeRight .textHome {
+        max-width: 200px;
+        max-height: 300px;
+        font-size: 9px;
+        padding: 8px;
+    }
+
+    .buttonAbout {
+        font-size: 10px;
+        padding: 10px;
+    }
+
+    .buttonAbout:hover {
+        padding: 11px;
+    }
+
+    #containLinkFindAgencies {
+        height: 200px;
+        width: 650px;
+    }
+
     #textLinkFindAgencies p{
         font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .homeLeft .imageHome {
+        display: none;
+    }
+
+    .homeRight .imageHome {
+        display: none;
+    }
+
+    .homeLeft .textHome {
+        max-width: 300px;
+        max-height: 400px;
+        font-size: 13px;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .homeRight .textHome {
+        max-width: 300px;
+        max-height: 400px;
+        font-size: 13px;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .buttonAbout {
+        font-size: 14px;
+        padding: 14px;
+    }
+
+    .buttonAbout:hover {
+        padding: 15px;
+    }
+
+    #containLinkFindAgencies {
+        height: 250px;
+        width: 850px;
+    }
+
+    #textLinkFindAgencies p{
+        font-size: 14px;
     }
 }
