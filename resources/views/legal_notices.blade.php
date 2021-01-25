@@ -13,9 +13,9 @@
     <body>
         @include('layouts.nav')
         <main>
-            <div>
-                Mentions légales
-            </div>
+            <section id="legalNotice">
+
+            </section>
         </main>
         @include('layouts.footer')
     </body>

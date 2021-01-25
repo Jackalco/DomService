@@ -6,6 +6,7 @@
         <link rel="stylesheet" type="text/css" href="{{ asset('css/layouts.css')}}">
         <link rel="stylesheet" type="text/css" href="{{ asset('css/services.css')}}">
         <script src="https://kit.fontawesome.com/172e84d6d0.js" crossorigin="anonymous"></script>
+        <script src="{{ asset('js/navbar.js') }}"></script>
 
         <title>DOM Services</title>
 
@@ -14,34 +15,34 @@
         @include('layouts.nav')
         <main>
             <section id="aboutServices">
-                <h2 id="titleServices">Nos services</h2>
+                <h1 id="titleServices">Nos services</h1>
                 <div id="infoServices">
-                    <img src="{{ asset('images/img1.jpg') }}" alt="img1">
                     <p id="textInfoServices">
                         DOM Services propose plusieurs services pour les personnes ayant besoin d'assistance à domicile afin de les aider dans leurs quotidien.
-                    </p>  
+                    </p>
+                    <img id="imageInfoServices" src="{{ asset('images/img1.jpg') }}" alt="img1">
                 </div>
-                <a class="linkServices" href="">
+                <a class="linkServices" href="{{ route('servicing') }}">
                     <i class="fas fa-broom iconServices"></i>
                     <div class="titleIcon">Entretien du logement</div>
                 </a>
-                <a class="linkServices" href="">
+                <a class="linkServices" href="{{ route('ironing') }}">
                     <i class="fas fa-tshirt iconServices"></i>
                     <div class="titleIcon">Repassage</div>
                 </a>
-                <a class="linkServices" href="">
+                <a class="linkServices" href="{{ route('help-seniors') }}">
                     <i class="fas fa-blind iconServices"></i>
                     <div class="titleIcon">Aide aux seniors</div>
                 </a>
-                <a class="linkServices" href="">
+                <a class="linkServices" href="{{ route('shopping') }}">
                     <i class="fas fa-shopping-bag iconServices"></i>
                     <div class="titleIcon">Courses et accompagnement sorties</div>
                 </a>
-                <a class="linkServices" href="">
+                <a class="linkServices" href="{{ route('concierge') }}">
                     <i class="fas fa-concierge-bell iconServices"></i>
                     <div class="titleIcon">Conciergerie</div>
                 </a>
-                <a class="linkServices" href="">
+                <a class="linkServices" href="{{ route('relationship-providers') }}">
                     <i class="fas fa-hands-helping iconServices"></i>
                     <div class="titleIcon">Mise en relation avec nos prestataires</div>
                 </a>

@@ -40,3 +40,28 @@ Route::get('/entreprise', function () {
 Route::get('/mentions-legales', function () {
     return view('legal_notices');
 })->name('legal_notices');
+
+Route::get('/services/entretien-logement', function () {
+    return view('services/servicing');
+})->name('servicing');
+
+Route::get('/services/repassage', function () {
+    return view('services/ironing');
+})->name('ironing');
+
+Route::get('/services/courses-accompagnement-sorties', function () {
+    return view('services/shopping');
+})->name('shopping');
+
+Route::get('/services/aide-seniors', function () {
+    return view('services/help_seniors');
+})->name('help-seniors');
+
+Route::get('/services/conciergerie', function () {
+    return view('services/concierge');
+})->name('concierge');
+
+Route::get('/services/relation-prestataire', function () {
+    return view('services/relationship_providers');
+})->name('relationship-providers');
+
