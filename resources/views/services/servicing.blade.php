@@ -24,11 +24,15 @@
                     <a class="summaryItem" href="{{ route('relationship-providers') }}">Mise en relation avec nos prestataires</a>
                 </div>
                 <div id="textService">
-                    <h1>Entretien du logement</h1>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi feugiat sapien ornare, ultricies dui sed, lobortis nisl. In odio enim, condimentum in pharetra ac, faucibus sed odio. Duis pharetra erat in libero sagittis, in luctus magna sagittis. Ut augue arcu, congue in tristique sit amet, gravida ac nunc. Duis sollicitudin nulla dolor, at mattis libero congue id. Etiam ornare, urna sed pharetra sodales, diam lectus posuere velit, id facilisis elit nibh vitae tellus. Integer ut lorem id lacus pellentesque gravida. Fusce pellentesque ut magna sed consectetur. Phasellus leo felis, luctus at est vitae, lacinia vehicula dolor. Quisque at feugiat enim.
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi feugiat sapien ornare, ultricies dui sed, lobortis nisl. In odio enim, condimentum in pharetra ac, faucibus sed odio. Duis pharetra erat in libero sagittis, in luctus magna sagittis. Ut augue arcu, congue in tristique sit amet, gravida ac nunc. Duis sollicitudin nulla dolor, at mattis libero congue id. Etiam ornare, urna sed pharetra sodales, diam lectus posuere velit, id facilisis elit nibh vitae tellus. Integer ut lorem id lacus pellentesque gravida. Fusce pellentesque ut magna sed consectetur. Phasellus leo felis, luctus at est vitae, lacinia vehicula dolor. Quisque at feugiat enim.
-                    </p>
+                    <div class="itemTextService">
+                        <h1>Entretien du logement</h1>
+                        <p>
+                            Vous n'avez plus le temps ni l'envie de faire votre ménage ? DOM SERVICES VOUS FACILITE VOTRE quotidien. Imaginez votre maison propre et rangée selon vos exigences ! Partagez-nous vos besoins et toutes vos envies concernant l’entretien de votre intérieur. Ménage, repassage, rangement, préparation des repas, ne vous occupez plus de rien ! 
+                        </p>
+                        <p>
+                            Allégez votre quotidien et prenez du temps pour vous et votre entourage. Nous formons nos employés pour répondre à chacun de vos besoins. Nous prenons soin de votre intérieur. Nous gérons l’intégralité du linge et repassons tous les textiles. Au-delà d’un savoir-faire, il nous tient à cœur de vous satisfaire. Nous respectons vos habitudes de rangement et votre intimité. Nous adaptons notre planning pour des prestations de ménage aux jours et heures de votre choix. Nos professionnelles sont formées en continu pour vous satisfaire.   
+                        </p>
+                    </div>
                 </div>
             </section>
         </main>

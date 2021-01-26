@@ -24,11 +24,18 @@
                     <a class="summaryItem" href="{{ route('relationship-providers') }}">Mise en relation avec nos prestataires</a>
                 </div>
                 <div id="textService">
-                    <h1>Courses et accompagnement sorties</h1>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi feugiat sapien ornare, ultricies dui sed, lobortis nisl. In odio enim, condimentum in pharetra ac, faucibus sed odio. Duis pharetra erat in libero sagittis, in luctus magna sagittis. Ut augue arcu, congue in tristique sit amet, gravida ac nunc. Duis sollicitudin nulla dolor, at mattis libero congue id. Etiam ornare, urna sed pharetra sodales, diam lectus posuere velit, id facilisis elit nibh vitae tellus. Integer ut lorem id lacus pellentesque gravida. Fusce pellentesque ut magna sed consectetur. Phasellus leo felis, luctus at est vitae, lacinia vehicula dolor. Quisque at feugiat enim.
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi feugiat sapien ornare, ultricies dui sed, lobortis nisl. In odio enim, condimentum in pharetra ac, faucibus sed odio. Duis pharetra erat in libero sagittis, in luctus magna sagittis. Ut augue arcu, congue in tristique sit amet, gravida ac nunc. Duis sollicitudin nulla dolor, at mattis libero congue id. Etiam ornare, urna sed pharetra sodales, diam lectus posuere velit, id facilisis elit nibh vitae tellus. Integer ut lorem id lacus pellentesque gravida. Fusce pellentesque ut magna sed consectetur. Phasellus leo felis, luctus at est vitae, lacinia vehicula dolor. Quisque at feugiat enim.
-                    </p>
+                    <div class="itemTextService">
+                        <h1>Courses et accompagnement sorties</h1>
+                        <p>
+                            Le travail de nos auxiliaires de vie est d’assurer la réalisation des courses. Deux choix s’offrent aux bénéficiaires : l’auxiliaire de vie s’en charge seul si la personne est dans l’incapacité de se déplacer, temporairement ou durablement, ou conjointement si elle souhaite participer. Nos services prévoient le rangement des courses dans le logement et éviter tout risque de blessure ou chute. 
+                        </p>
+                        <p>
+                            Ils respectent vos habitudes et se rendent avec vous dans vos commerces habituels. Sortie au bras ou véhiculée, à vous de nous faire part de vos besoins.   
+                        </p>
+                        <p>
+                            Vous ne pouvez ou ne souhaitez pas vous rendre dans les magasins ? Votre auxiliaire de vie se charge de vos achats en toute autonomie, selon vos souhaits. Récupération de vos courses au drive ou achats chez des petits commerçants, DOM SERVICES s’adapte à vos besoins !
+                        </p>
+                    </div>
                 </div>
             </section>
         </main>

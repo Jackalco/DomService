@@ -6,6 +6,7 @@
         <link rel="stylesheet" type="text/css" href="<?php echo e(asset('css/layouts.css')); ?>">
         <link rel="stylesheet" type="text/css" href="<?php echo e(asset('css/company.css')); ?>">
         <script src="https://kit.fontawesome.com/172e84d6d0.js" crossorigin="anonymous"></script>
+        <script src="<?php echo e(asset('js/navbar.js')); ?>"></script>d
 
         <title>DOM Service</title>
 
@@ -16,11 +17,69 @@
             <section class="aboutCompany">
                 <h1 class="titleAboutCompany">L'entreprise</h1>
                 <div class="contentAboutCompany">
-                    <p class="textAboutCompany">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi feugiat sapien ornare, ultricies dui sed, lobortis nisl. In odio enim, condimentum in pharetra ac, faucibus sed odio. Duis pharetra erat in libero sagittis, in luctus magna sagittis. Ut augue arcu, congue in tristique sit amet, gravida ac nunc. Duis sollicitudin nulla dolor, at mattis libero congue id. Etiam ornare, urna sed pharetra sodales, diam lectus posuere velit, id facilisis elit nibh vitae tellus. Integer ut lorem id lacus pellentesque gravida. Fusce pellentesque ut magna sed consectetur. Phasellus leo felis, luctus at est vitae, lacinia vehicula dolor. Quisque at feugiat enim.
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi feugiat sapien ornare, ultricies dui sed, lobortis nisl. In odio enim, condimentum in pharetra ac, faucibus sed odio. Duis pharetra erat in libero sagittis, in luctus magna sagittis. Ut augue arcu, congue in tristique sit amet, gravida ac nunc. Duis sollicitudin nulla dolor, at mattis libero congue id. Etiam ornare, urna sed pharetra sodales, diam lectus posuere velit, id facilisis elit nibh vitae tellus. Integer ut lorem id lacus pellentesque gravida. Fusce pellentesque ut magna sed consectetur. Phasellus leo felis, luctus at est vitae, lacinia vehicula dolor. Quisque at feugiat enim.
-                    </p>
-                    <img class="imageAboutCompany" src="<?php echo e(asset('images/img6.jpg')); ?>" alt="img6">
+                    <div class="itemAboutCompany">
+                        <div class="textAboutCompany">
+                            <h2>Introduction</h2>
+                            <p>
+                                DOM SERVICES est un service à la personne crée par Sylvie MENDY en 2015.
+                            </p>
+                            <p>
+                                L'objectif principal de DOM SERVICES est le bien-être de ses bénéficiaires. Nous l'assurons en développant et améliorant ses services. Étant sur une démarche RSE, DOM SERVICES interviendra seulement sur Saint-Brévin.
+                            </p>
+                            <p>
+                                DOM SERVICES  est l'employeur du personnel lis à votre disposition, nous intervenons en tant que prestataire.
+                            </p>
+                        </div>                             
+                        <img class="imageAboutCompany" src="<?php echo e(asset('images/img6.jpg')); ?>" alt="img6">
+                    </div>
+                    <div class="itemAboutCompany">
+                        <img class="imageAboutCompany" src="<?php echo e(asset('images/img5.jpg')); ?>" alt="img5">
+                        <div class="textAboutCompany">
+                            <h2>Nos valeurs</h2>
+                            <ul>
+                                <li>L'humanité</li>
+                                <li>La solidarité</li>
+                                <li>L'écoute</li>
+                                <li>Le respect</li>
+                                <li>L'échange</li>                                
+                                <li>La diversité</li>
+                                <li>Le respect du lieu de vie</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="itemAboutCompany">
+                        <div class="textAboutCompany">
+                            <h2>Activité</h2>
+                            <p>
+                                Le service fonctionne du lundi au vendredi de 9h30 à 12h00 et de 13h00 à 15h30.
+                                <br>
+                                Pour les demandes, les coordonnatrices de DOM SERVICES reçoivent sur rendez-vous dans nos locaux.
+                            </p>
+                            <p>
+                                En dehors des heures d'ouvertures, l'accueil téléphonique de DOM SERVICES est assuré par un répondeur mis à disposition des usagers et du personnel au 09 72 58 61 65, ainsi qu'un interlocuteur pour assurer les urgences. Les messages sont traités pendant les heures d'ouvertures du service.
+                            </p>
+                            <p>
+                                En cas d'interrogations, de difficultés particulières ou de dysfonctionnement constatés, vous pouvez vous addresser à DOM SERVICES par téléphone, courrier ou e-mail.
+                            </p>
+                            <p>
+                                DOM SERVICES offre un service qui contribue au maintien à domicile des personnes âgées, handicapées ou malades. En mettant à disposition du personnel, il apporte une aide et un soutien à la personne dans son propre cadre de vie.
+                            </p>
+                        </div>
+                        <img class="imageAboutCompany" src="<?php echo e(asset('images/img7.jpg')); ?>" alt="img7">
+                    </div>
+                    <div class="itemAboutCompany">
+                        <img class="imageAboutCompany" src="<?php echo e(asset('images/img8.jpg')); ?>" alt="img8">
+                        <div class="textAboutCompany">
+                            <h2>Nos engagements</h2>
+                            <ul>
+                                <li>Un service de qualité</li>
+                                <li>Des tarifs adaptés</li>
+                                <li>Une force de réactivité</li>
+                                <li>Une écoute, une solution</li>
+                                <li>Des partenaires de confiance</li>                                
+                            </ul>
+                        </div>
+                    </div>
                 </div>
                 
             </section>
