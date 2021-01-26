@@ -90,14 +90,26 @@
         padding: 20px;
     }
 
-    #textService p{
-        font-size: 20px;
-        text-align: justify;
-    }
-
-    #textService h1{
+    #textService h1 {
         font-size: 40px;
     }
+
+    .itemTextService {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .itemTextService p {
+        font-size: 20px;
+        line-height: 30px;
+        text-align: justify;
+        text-indent: 30px;
+    }
+
+    .itemTextService h2 {
+        font-size: 30px;
+    }
+
 
     #summaryService {
         display: flex;

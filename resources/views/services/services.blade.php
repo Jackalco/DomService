@@ -23,7 +23,7 @@
                     <img id="imageInfoServices" src="{{ asset('images/img1.jpg') }}" alt="img1">
                 </div>
                 <a class="linkServices" href="{{ route('servicing') }}">
-                    <i class="fas fa-broom iconServices"></i>
+                    <i class="fas fa-home iconServices"></i>
                     <div class="titleIcon">Entretien du logement</div>
                 </a>
                 <a class="linkServices" href="{{ route('ironing') }}">

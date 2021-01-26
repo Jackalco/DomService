@@ -23,7 +23,7 @@
             <a class="footerAsideServiceLink" href="#">Mise en relation avec nos prestataires</a>
         </div>
         <div class="footerAside">
-            <a id="legalNotice" href="{{ route('legal_notices') }}">Mentions légales</a>
+            <a id="legalNotice" href="{{ route('legal-notices') }}">Mentions légales</a>
         </div>
     </div>
 </footer>

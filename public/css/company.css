@@ -1,0 +1,28 @@
+.aboutCompany {
+    display: flex;
+    flex-direction: column;
+    padding-left: 15%;
+}
+
+.titleAboutCompany {
+    font-size: 40px;
+}
+
+.contentAboutCompany {
+    display: flex;
+    flex-direction: row;
+}
+
+.textAboutCompany {
+    font-size: 20px;
+    text-align: justify;
+}
+
+.imageAboutCompany {
+    float: right;
+    width: 400px;
+    height: 250px;
+    margin-left: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px gray;
+}

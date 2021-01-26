@@ -25,10 +25,15 @@
                 </div>
                 <div id="textService">
                     <h1>Aide aux seniors</h1>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi feugiat sapien ornare, ultricies dui sed, lobortis nisl. In odio enim, condimentum in pharetra ac, faucibus sed odio. Duis pharetra erat in libero sagittis, in luctus magna sagittis. Ut augue arcu, congue in tristique sit amet, gravida ac nunc. Duis sollicitudin nulla dolor, at mattis libero congue id. Etiam ornare, urna sed pharetra sodales, diam lectus posuere velit, id facilisis elit nibh vitae tellus. Integer ut lorem id lacus pellentesque gravida. Fusce pellentesque ut magna sed consectetur. Phasellus leo felis, luctus at est vitae, lacinia vehicula dolor. Quisque at feugiat enim.
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi feugiat sapien ornare, ultricies dui sed, lobortis nisl. In odio enim, condimentum in pharetra ac, faucibus sed odio. Duis pharetra erat in libero sagittis, in luctus magna sagittis. Ut augue arcu, congue in tristique sit amet, gravida ac nunc. Duis sollicitudin nulla dolor, at mattis libero congue id. Etiam ornare, urna sed pharetra sodales, diam lectus posuere velit, id facilisis elit nibh vitae tellus. Integer ut lorem id lacus pellentesque gravida. Fusce pellentesque ut magna sed consectetur. Phasellus leo felis, luctus at est vitae, lacinia vehicula dolor. Quisque at feugiat enim.
-                    </p>
+                    <div class="itemTextService">
+                        <h2>Toillette</h2>
+                        <p>
+                            DOM Services accompagnent les personnes âgées dans le processus de l’habillage. Il est important de s’assurer que le bénéficiaire soit vêtu correctement en respectant d’abord ses choix pour la tenue qu’il souhaite porter tout au long de la journée. DOM Services accorde une importance particulière à l’habillage pour une question d’hygiène. Et sachant qu’une personne âgée est plus frileuse, les tenues sont adaptées selon la saison. Les auxiliaires de vie préconisent des vêtements adaptés à la journée pour laisser au placard le pyjama et la chemise de nuit même si la personne n’a aucune intention de sortir de son domicile. Il est important que le bénéficiaire se sente en confiance dans ses tenues et puisse se sentir confortable et présentable lors de la venue de la famille, d’un proche ou d’un voisin.
+                        </p>
+                        <p>
+                            Être à l’aise facilite les mouvements de la personne à son domicile surtout lorsqu’elle est amenée à avoir des activités sociales ou physiques. C'est pour ca que chez DOM SERVICES NOUS METTONS UN POINT D'HONNEUR À CE QUE LES PROFESSIONNELS RESTE LES MÊMES. L’auxiliaire de vie fait participer le bénéficiaire dans le processus de sélection des vêtements afin qu’il prenne du plaisir à s’habiller. Choisir chaque jour un style différent peut permettre à votre proche de se familiariser et de stimuler sa mémoire et ses souvenirs. Et l’auxiliaire de vie assure l’aide à l’habillage en s’adaptant à l’état de santé et à la forme de la personne (difficulté à bouger, problème de vue, arthrose) pour éviter tout risque de chute (mettre un pantalon, fermer ses boutons de chemise, etc.). Lorsque la personne est habillée, l’auxiliaire de vie s’assure de ranger les vêtements en triant le linge sale.  
+                        </p>
+                    </div>
                 </div>
             </section>
         </main>

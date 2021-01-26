@@ -1,0 +1,9 @@
+#contact {
+    display: flex;
+    flex-direction: column;
+}
+
+.formContact {
+    display: flex;
+    flex-direction: column;
+}
