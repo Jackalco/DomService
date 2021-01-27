@@ -191,7 +191,7 @@ hr {
     }
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 768px){
     .homeLeft .imageHome {
         display: none;
     }
@@ -232,5 +232,9 @@ hr {
 
     #textLinkFindAgencies p{
         font-size: 14px;
+    }
+
+    #iconLinkFindAgencies{
+        display: none;
     }
 }

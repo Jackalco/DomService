@@ -58,7 +58,7 @@
     color: white;
 }
 
-@media screen and (max-width: 1920px) {
+@media only screen and (max-width: 1920px) {
     .iconServices {
         font-size: 100px;
     }
@@ -142,6 +142,20 @@
     li {
         font-size: 20px;
         margin-bottom: 5px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #titleServices {
+        padding-right: 0em;
+    }
+
+    #imageInfoServices {
+        display: none;
+    }
+
+    #textInfoServices {
+        margin-right: 0px;
     }
 }
 
