@@ -20,7 +20,8 @@ Route::get('/entreprise', 'PagesController@company')->name('company');
 Route::get('/recrutement', 'PagesController@recruitment')->name('recruitment');
 Route::get('/mentions-legales', 'PagesController@legal_notices')->name('legal-notices');
 
-Route::get('/contact', 'PagesController@contact')->name('contact');
+Route::get('/contact', 'ContactController@createForm')->name('contact');
+Route::post('/contact', 'ContactController@ContactForm')->name('contact.store');
 
 /*Route::get('/', function () {
     return view('home');

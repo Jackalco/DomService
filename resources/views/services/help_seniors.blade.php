@@ -53,8 +53,8 @@
                             Avec la solitude ou les difficultés physiques développées avec l’âge, certaines personnes âgées ne prennent plus autant de plaisir à savourer et à déguster un repas. DOM SERVICES offre ses services pour permettre aux seniors de profiter d’un repas agréable et convivial aux côtés de notre auxiliaire de vie. Ce dernier va adapter le repas en fonction des goûts et des envies culinaires de votre proche, proposer un repas équilibré et adapté, installer confortablement la personne afin de la mettre dans les meilleures conditions une fois à table. Le but est de lui permettre de retrouver des sensations et de réveiller ses papilles gustatives.  
                         </p>
                     </div>
-                    
                 </div>
+                <img src="{{ asset('images/help-seniors.jpg') }}" class="imageServices" alt="Image assistance seniors">
             </section>
         </main>
         @include('layouts.footer')

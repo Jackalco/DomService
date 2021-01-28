@@ -37,6 +37,7 @@
                         </p>
                     </div>
                 </div>
+                <img src="{{ asset('images/shopping.jpg') }}" class="imageServices" alt="Image courses">
             </section>
         </main>
         @include('layouts.footer')

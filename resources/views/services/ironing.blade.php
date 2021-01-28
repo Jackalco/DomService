@@ -34,6 +34,7 @@
                         </p>
                     </div>
                 </div>
+                <img src="{{ asset('images/ironing.jpg') }}" class="imageServices" alt="Image repassage">
             </section>
         </main>
         @include('layouts.footer')

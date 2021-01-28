@@ -16,19 +16,84 @@
         <main>
             <section id="contact">
                 <h1>Contact</h1>
-                <form class="formContact" action="{{ route('contact') }}" method="post">
-                    <div>Prénom</div>
-                    <input type="firstName" name="firstName" placeholder="Prénom">
-                    <div>Nom</div>
-                    <input type="lastName" name="lastName" placeholder="Nom">
-                    <div>Adresse mail</div>
-                    <input type="email" name="email" placeholder="Adresse mail">
-                    <div>Téléphone</div>
-                    <input type="phone" name="phone" placeholder="Téléphone">
-                    <div>Votre message</div>
-                    <textarea type="message" name="message" placeholder="Votre message"></textarea>
-                    <input type="submit" value="Envoyer">
-                </form>
+                <div class="container">
+
+                    <!-- Success message -->
+                    @if(Session::has('success'))
+                        <div>
+                            {{Session::get('success')}}
+                        </div>
+                    @endif
+
+                    <form action="" method="post" action="{{ route('contact.store') }}">
+
+                        <!-- CROSS Site Request Forgery Protection -->
+                        @csrf
+
+                        <div class="itemForm">
+                            <div class="labelForm">Nom</div>
+                            <input type="text" class="inputForm {{ $errors->has('name') ? 'error' : '' }}" name="name" id="name">
+
+                            <!-- Error -->
+                            @if ($errors->has('name'))
+                            <div class="error">
+                                {{ $errors->first('name') }}
+                            </div>
+                            @endif
+                        </div>
+
+                        <div class="itemForm">
+                            <div class="labelForm">Email</div>
+                            <input type="email" class="inputForm {{ $errors->has('email') ? 'error' : '' }}" name="email" id="email">
+
+                            @if ($errors->has('email'))
+                            <div class="error">
+                                {{ $errors->first('email') }}
+                            </div>
+                            @endif
+                        </div>
+
+                        <div class="itemForm">
+                            <div class="labelForm">Téléphone</div>
+                            <input type="text" class="inputForm {{ $errors->has('phone') ? 'error' : '' }}" name="phone" id="phone">
+
+                            @if ($errors->has('phone'))
+                            <div class="error">
+                                {{ $errors->first('phone') }}
+                            </div>
+                            @endif
+                        </div>
+
+                        <div class="itemForm">
+                            <div class="labelForm">Agence</div>
+                            <select class="inputForm {{ $errors->has('subject') ? 'error' : '' }}" name="agency" id="agency">
+                                <option value="">Choississez une agence</option>
+                                <option value="Agence 1">Agence 1</option>
+                                <option value="Agence 2">Agence 2</option>
+                            </select>
+
+                            @if ($errors->has('subject'))
+                            <div class="error">
+                                {{ $errors->first('subject') }}
+                            </div>
+                            @endif
+                        </div>
+
+                        <div class="itemForm">
+                            <div class="labelForm">Message</div>
+                            <textarea class="inputForm {{ $errors->has('message') ? 'error' : '' }}" name="message" id="message"
+                                rows="4"></textarea>
+
+                            @if ($errors->has('message'))
+                            <div class="error">
+                                {{ $errors->first('message') }}
+                            </div>
+                            @endif
+                        </div>
+
+                        <input type="submit" name="send" value="Submit" class="inputSubmit">
+                    </form>
+                </div>
             </section>
         </main>
         @include('layouts.footer')

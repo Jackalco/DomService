@@ -31,6 +31,7 @@
                         </p>
                     </div>
                 </div>
+                <img src="{{ asset('images/relationship-providers.jpg') }}" class="imageServices" alt="Image relation prestataires">
             </section>
         </main>
         @include('layouts.footer')

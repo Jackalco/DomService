@@ -51,7 +51,7 @@
                         <div class="textAboutCompany">
                             <h2>Activité</h2>
                             <p>
-                                Le service fonctionne du lundi au vendredi de 9h30 à 12h00 et de 13h00 à 15h30.
+                                Le service fonctionne du lundi au vendredi de 9h30 à 12h00 et de 13h00 à 18h.
                                 <br>
                                 Pour les demandes, les coordonnatrices de DOM SERVICES reçoivent sur rendez-vous dans nos locaux.
                             </p>
@@ -76,7 +76,8 @@
                                 <li>Des tarifs adaptés</li>
                                 <li>Une force de réactivité</li>
                                 <li>Une écoute, une solution</li>
-                                <li>Des partenaires de confiance</li>                                
+                                <li>Des partenaires de confiance</li>
+                                <li>Un roulement de personnel limité</li>                              
                             </ul>
                         </div>
                     </div>

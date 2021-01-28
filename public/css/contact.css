@@ -1,9 +1,50 @@
 #contact {
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
-.formContact {
-    display: flex;
-    flex-direction: column;
+.container {
+    text-align: left;
+    font-family: sans-serif;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+.itemForm {
+    margin-bottom: 25px;
+}
+
+.inputForm {
+    width: 30%;
+    height: 30px;
+    font-size: 17px;
+}
+
+.inputSubmit {
+    font-size: 25px;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color:rgb(29, 36, 115);
+    border-radius: 2px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    color: white;
+}
+
+.inputSubmit:hover {
+    background-color: rgb(0, 0, 115);
+}
+
+.error {
+
+}
+
+.labelForm {
+    font-size: 20px;
+    margin-bottom: 5px;
 }
