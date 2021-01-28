@@ -18,7 +18,7 @@ class ContactController extends Controller
               'name' => 'required',
               'email' => 'required|email',
               'phone' => 'required|regex:/^([0-9\s\-\+\(\)]*)$/|min:10',
-              'subject'=>'required',
+              'agency'=>'required',
               'message' => 'required'
            ]);
   

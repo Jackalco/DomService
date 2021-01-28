@@ -7,7 +7,7 @@ User details: <br><br>
 Name: {{ $name }} <br>
 Email: {{ $email }} <br>
 Phone: {{ $phone }} <br>
-Subject: {{ $subject }} <br>
+Agence: {{ $agency }} <br>
 Message: {{ $user_query }} <br><br>
 
 Thanks

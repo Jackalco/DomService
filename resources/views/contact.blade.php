@@ -66,7 +66,7 @@
 
                         <div class="itemForm">
                             <div class="labelForm">Agence</div>
-                            <select class="inputForm {{ $errors->has('subject') ? 'error' : '' }}" name="agency" id="agency">
+                            <select class="inputForm {{ $errors->has('agency') ? 'error' : '' }}" name="agency" id="agency">
                                 <option value="">Choississez une agence</option>
                                 <option value="Agence 1">Agence 1</option>
                                 <option value="Agence 2">Agence 2</option>
