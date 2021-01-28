@@ -19,11 +19,12 @@
                 <div class="container">
 
                     <!-- Success message -->
-                    @if(Session::has('success'))
-                        <div>
+                    <!--@if(Session::has('success'))-->
+                        <div class="alert">
+                        Votre message a bien été envoyé
                             {{Session::get('success')}}
                         </div>
-                    @endif
+                    <!--@endif-->
 
                     <form action="" method="post" action="{{ route('contact.store') }}">
 
@@ -36,8 +37,8 @@
 
                             <!-- Error -->
                             @if ($errors->has('name'))
-                            <div class="error">
-                                {{ $errors->first('name') }}
+                            <div class="errorInput">
+                                Ce champ est obligatoire.
                             </div>
                             @endif
                         </div>
@@ -47,8 +48,8 @@
                             <input type="email" class="inputForm {{ $errors->has('email') ? 'error' : '' }}" name="email" id="email">
 
                             @if ($errors->has('email'))
-                            <div class="error">
-                                {{ $errors->first('email') }}
+                            <div class="errorInput">
+                                Ce champ est obligatoire.
                             </div>
                             @endif
                         </div>
@@ -58,8 +59,8 @@
                             <input type="text" class="inputForm {{ $errors->has('phone') ? 'error' : '' }}" name="phone" id="phone">
 
                             @if ($errors->has('phone'))
-                            <div class="error">
-                                {{ $errors->first('phone') }}
+                            <div class="errorInput">
+                                Ce champ est obligatoire.
                             </div>
                             @endif
                         </div>
@@ -72,26 +73,25 @@
                                 <option value="Agence 2">Agence 2</option>
                             </select>
 
-                            @if ($errors->has('subject'))
-                            <div class="error">
-                                {{ $errors->first('subject') }}
+                            @if ($errors->has('agency'))
+                            <div class="errorInput">
+                                Ce champ est obligatoire.
                             </div>
                             @endif
                         </div>
 
                         <div class="itemForm">
                             <div class="labelForm">Message</div>
-                            <textarea class="inputForm {{ $errors->has('message') ? 'error' : '' }}" name="message" id="message"
-                                rows="4"></textarea>
+                            <textarea class="textAreaForm {{ $errors->has('message') ? 'error' : '' }}" name="message" id="message"></textarea>
 
                             @if ($errors->has('message'))
-                            <div class="error">
-                                {{ $errors->first('message') }}
+                            <div class="errorInput">
+                                Ce champ est obligatoire.
                             </div>
                             @endif
                         </div>
 
-                        <input type="submit" name="send" value="Submit" class="inputSubmit">
+                        <input type="submit" name="send" value="Envoyer" class="inputSubmit">
                     </form>
                 </div>
             </section>

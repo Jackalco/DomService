@@ -15,11 +15,18 @@ h1 {
 
 .itemForm {
     margin-bottom: 25px;
+    color: black;
 }
 
 .inputForm {
     width: 30%;
     height: 30px;
+    font-size: 17px;
+}
+
+.textAreaForm {
+    width: 30%;
+    height: 100px;
     font-size: 17px;
 }
 
@@ -40,11 +47,12 @@ h1 {
     background-color: rgb(0, 0, 115);
 }
 
-.error {
-
+.errorInput {
+    color: red;
+    padding-top: 10px;
 }
 
 .labelForm {
     font-size: 20px;
-    margin-bottom: 5px;
+    
 }
