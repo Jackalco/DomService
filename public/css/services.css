@@ -32,6 +32,13 @@
     margin-right: 50px;
 }
 
+.iconContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
 .titleIcon {
     text-align: center;
     margin: 1em;
@@ -152,6 +159,20 @@ li {
   
 }
 
+@media only screen and (min-width : 1200px) {
+    .linkServices {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+}
+
+@media only screen and (max-width : 1200px) {
+    .linkServices {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+}
+
 @media only screen and (max-width: 768px) {
     #titleServices {
         padding-right: 0em;
@@ -164,5 +185,11 @@ li {
     #textInfoServices {
         margin-right: 0px;
     }
+
+    .linkServices {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
 }
 

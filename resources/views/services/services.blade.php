@@ -25,30 +25,33 @@
                     </p>
                     <img id="imageInfoServices" src="{{ asset('images/img1.jpg') }}" alt="img1">
                 </div>
-                <a class="linkServices" href="{{ route('servicing') }}">
-                    <i class="fas fa-home iconServices"></i>
-                    <div class="titleIcon">Entretien du logement</div>
-                </a>
-                <a class="linkServices" href="{{ route('ironing') }}">
-                    <i class="fas fa-tshirt iconServices"></i>
-                    <div class="titleIcon">Repassage</div>
-                </a>
-                <a class="linkServices" href="{{ route('help-seniors') }}">
-                    <i class="fas fa-blind iconServices"></i>
-                    <div class="titleIcon">Aide aux seniors</div>
-                </a>
-                <a class="linkServices" href="{{ route('shopping') }}">
-                    <i class="fas fa-shopping-bag iconServices"></i>
-                    <div class="titleIcon">Courses et accompagnement sorties</div>
-                </a>
-                <a class="linkServices" href="{{ route('concierge') }}">
-                    <i class="fas fa-concierge-bell iconServices"></i>
-                    <div class="titleIcon">Conciergerie</div>
-                </a>
-                <a class="linkServices" href="{{ route('relationship-providers') }}">
-                    <i class="fas fa-hands-helping iconServices"></i>
-                    <div class="titleIcon">Mise en relation avec nos prestataires</div>
-                </a>
+                <div class="iconContainer">
+                    <a class="linkServices" href="{{ route('servicing') }}">
+                        <i class="fas fa-home iconServices"></i>
+                        <div class="titleIcon">Entretien du logement</div>
+                    </a>
+                    <a class="linkServices" href="{{ route('ironing') }}">
+                        <i class="fas fa-tshirt iconServices"></i>
+                        <div class="titleIcon">Repassage</div>
+                    </a>
+                    <a class="linkServices" href="{{ route('help-seniors') }}">
+                        <i class="fas fa-blind iconServices"></i>
+                        <div class="titleIcon">Aide aux seniors</div>
+                    </a>
+                    <a class="linkServices" href="{{ route('shopping') }}">
+                        <i class="fas fa-shopping-bag iconServices"></i>
+                        <div class="titleIcon">Courses et accompagnement sorties</div>
+                    </a>
+                    <a class="linkServices" href="{{ route('concierge') }}">
+                        <i class="fas fa-concierge-bell iconServices"></i>
+                        <div class="titleIcon">Conciergerie</div>
+                    </a>
+                    <a class="linkServices" href="{{ route('relationship-providers') }}">
+                        <i class="fas fa-hands-helping iconServices"></i>
+                        <div class="titleIcon">Mise en relation avec nos prestataires</div>
+                    </a>
+                </div>
+                
             </section>
         </main>
         @include('layouts.footer')
