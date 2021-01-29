@@ -5,7 +5,6 @@ Vous avez reçu un mail de : {{ $name }} <br><br>
 Détails : <br><br>
 
 Email : {{ $email }} <br>
-Téléphone : {{ $phone }} <br>
-Message : {{ $user_query }} <br><br>
+Téléphone : {{ $phone }} <br><br>
 
 Merci

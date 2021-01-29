@@ -14,9 +14,103 @@
     <body>
         <?php echo $__env->make('layouts.nav', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
         <main>
-            <div>
-                Recrutement
-            </div>
+        <section id="recruitment">
+                <div class="container">
+                    <h1>Recrutement</h1>
+                    <h3>Rejoignez-nous !</h3>
+                    <p>Vous avez remarquez l'une de nos annonces ou souhaitez soumettre une candidature spontanée ? Alors n'hésitez pas à remplir notre formulaire de recrutement.</p>
+                    <img src="<?php echo e(asset('images/recruitment.jpg')); ?>" alt="Image contact">
+                </div>
+                <div class="container">            
+
+                    <form action="" method="post" action="<?php echo e(route('recruitment.store')); ?>">
+
+                        <?php echo csrf_field(); ?>
+
+                        <div class="itemForm">
+                            <div class="labelForm">Nom</div>
+                            <input type="text" class="inputForm <?php echo e($errors->has('name') ? 'error' : ''); ?>" name="name" id="name">
+
+                            <?php if($errors->has('name')): ?>
+                            <div class="errorInput">
+                                Ce champ est obligatoire.
+                            </div>
+                            <?php endif; ?>
+                        </div>
+
+                        <div class="itemForm">
+                            <div class="labelForm">Email</div>
+                            <input type="email" class="inputForm <?php echo e($errors->has('email') ? 'error' : ''); ?>" name="email" id="email">
+
+                            <?php if($errors->has('email')): ?>
+                            <div class="errorInput">
+                                Ce champ est obligatoire.
+                            </div>
+                            <?php endif; ?>
+                        </div>
+
+                        <div class="itemForm">
+                            <div class="labelForm">Téléphone</div>
+                            <input type="text" class="inputForm <?php echo e($errors->has('phone') ? 'error' : ''); ?>" name="phone" id="phone">
+
+                            <?php if($errors->has('phone')): ?>
+                            <div class="errorInput">
+                                Ce champ est obligatoire.
+                            </div>
+                            <?php endif; ?>
+                        </div>
+
+                        <div class="itemForm">
+                            <div class="labelForm">Agence</div>
+                            <select class="inputForm <?php echo e($errors->has('agency') ? 'error' : ''); ?>" name="agency" id="agency">
+                                <option value="">Choississez une agence</option>
+                                <option value="Agence 1">Agence 1</option>
+                                <option value="Agence 2">Agence 2</option>
+                            </select>
+
+                            <?php if($errors->has('agency')): ?>
+                            <div class="errorInput">
+                                Ce champ est obligatoire.
+                            </div>
+                            <?php endif; ?>
+                        </div>
+
+                        <div class="itemForm">
+                            <div class="labelForm">CV</div>
+                            <div>Fichier acceptés : .docx, .doc et .pdf</div>
+                            <input type="file" accept=".docx, .doc, .pdf" class="fileInput <?php echo e($errors->has('cv') ? 'error' : ''); ?>" name="cv" id="cv">
+
+                            <?php if($errors->has('cv')): ?>
+                            <div class="errorInput">
+                                Ce champ est obligatoire.
+                            </div>
+                            <?php endif; ?>
+                        </div>
+
+                        <div class="itemForm">
+                            <div class="labelForm">Lettre de motivation</div>
+                            <div>Fichier acceptés : .docx, .doc et .pdf</div>
+                            <input type="file" accept=".docx, .doc, .pdf" class="fileInput <?php echo e($errors->has('letter') ? 'error' : ''); ?>" name="letter" id="letter">
+
+                            <?php if($errors->has('letter')): ?>
+                            <div class="errorInput">
+                                Ce champ est obligatoire.
+                            </div>
+                            <?php endif; ?>
+                        </div>
+
+                        <input type="submit" name="send" value="Envoyer" class="inputSubmit">
+
+                        <?php if(Session::has('success')): ?>
+                            <div class="alert">
+                                <?php echo e(Session::get('success')); ?>
+
+                            </div>
+                        <?php endif; ?>
+                        
+                    </form>
+                </div>
+            </section>
         </main>
         <?php echo $__env->make('layouts.footer', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
     </body>

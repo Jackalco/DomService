@@ -15,31 +15,25 @@
         <?php echo $__env->make('layouts.nav', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
         <main>
             <section id="contact">
-                <h1>Contact</h1>
                 <div class="container">
-
-                    <!-- Success message -->
-                    <?php if(Session::has('success')): ?>
-                        <div>
-                            <?php echo e(Session::get('success')); ?>
-
-                        </div>
-                    <?php endif; ?>
+                    <h1>Contact</h1>
+                    <h3>Contactez nous pour un devis gratuit.</h3>
+                    <p>Nos équipes vous contacteront dans les plus brefs délais afin de vous proposer une aide personnalisée selon votre profil.</p>
+                    <img src="<?php echo e(asset('images/contact.jpg')); ?>" alt="Image contact">
+                </div>
+                <div class="container">            
 
                     <form action="" method="post" action="<?php echo e(route('contact.store')); ?>">
 
-                        <!-- CROSS Site Request Forgery Protection -->
                         <?php echo csrf_field(); ?>
 
                         <div class="itemForm">
                             <div class="labelForm">Nom</div>
                             <input type="text" class="inputForm <?php echo e($errors->has('name') ? 'error' : ''); ?>" name="name" id="name">
 
-                            <!-- Error -->
                             <?php if($errors->has('name')): ?>
-                            <div class="error">
-                                <?php echo e($errors->first('name')); ?>
-
+                            <div class="errorInput">
+                                Ce champ est obligatoire.
                             </div>
                             <?php endif; ?>
                         </div>
@@ -49,9 +43,8 @@
                             <input type="email" class="inputForm <?php echo e($errors->has('email') ? 'error' : ''); ?>" name="email" id="email">
 
                             <?php if($errors->has('email')): ?>
-                            <div class="error">
-                                <?php echo e($errors->first('email')); ?>
-
+                            <div class="errorInput">
+                                Ce champ est obligatoire.
                             </div>
                             <?php endif; ?>
                         </div>
@@ -61,43 +54,47 @@
                             <input type="text" class="inputForm <?php echo e($errors->has('phone') ? 'error' : ''); ?>" name="phone" id="phone">
 
                             <?php if($errors->has('phone')): ?>
-                            <div class="error">
-                                <?php echo e($errors->first('phone')); ?>
-
+                            <div class="errorInput">
+                                Ce champ est obligatoire.
                             </div>
                             <?php endif; ?>
                         </div>
 
                         <div class="itemForm">
                             <div class="labelForm">Agence</div>
-                            <select class="inputForm <?php echo e($errors->has('subject') ? 'error' : ''); ?>" name="agency" id="agency">
+                            <select class="inputForm <?php echo e($errors->has('agency') ? 'error' : ''); ?>" name="agency" id="agency">
                                 <option value="">Choississez une agence</option>
                                 <option value="Agence 1">Agence 1</option>
                                 <option value="Agence 2">Agence 2</option>
                             </select>
 
-                            <?php if($errors->has('subject')): ?>
-                            <div class="error">
-                                <?php echo e($errors->first('subject')); ?>
-
+                            <?php if($errors->has('agency')): ?>
+                            <div class="errorInput">
+                                Ce champ est obligatoire.
                             </div>
                             <?php endif; ?>
                         </div>
 
                         <div class="itemForm">
                             <div class="labelForm">Message</div>
-                            <textarea class="inputForm <?php echo e($errors->has('message') ? 'error' : ''); ?>" name="message" id="message"
-                                rows="4"></textarea>
+                            <textarea class="textAreaForm <?php echo e($errors->has('message') ? 'error' : ''); ?>" name="message" id="message"></textarea>
 
                             <?php if($errors->has('message')): ?>
-                            <div class="error">
-                                <?php echo e($errors->first('message')); ?>
-
+                            <div class="errorInput">
+                                Ce champ est obligatoire.
                             </div>
                             <?php endif; ?>
                         </div>
 
-                        <input type="submit" name="send" value="Submit" class="inputSubmit">
+                        <input type="submit" name="send" value="Envoyer" class="inputSubmit">
+
+                        <?php if(Session::has('success')): ?>
+                            <div class="alert">
+                                <?php echo e(Session::get('success')); ?>
+
+                            </div>
+                        <?php endif; ?>
+                        
                     </form>
                 </div>
             </section>

@@ -15,27 +15,22 @@
         @include('layouts.nav')
         <main>
             <section id="contact">
-                <h1>Contact</h1>
                 <div class="container">
-
-                    <!-- Success message -->
-                    <!--@if(Session::has('success'))-->
-                        <div class="alert">
-                        Votre message a bien été envoyé
-                            {{Session::get('success')}}
-                        </div>
-                    <!--@endif-->
+                    <h1>Contact</h1>
+                    <h3>Contactez nous pour un devis gratuit.</h3>
+                    <p>Nos équipes vous contacteront dans les plus brefs délais afin de vous proposer une aide personnalisée selon votre profil.</p>
+                    <img src="{{ asset('images/contact.jpg') }}" alt="Image contact">
+                </div>
+                <div class="container">            
 
                     <form action="" method="post" action="{{ route('contact.store') }}">
 
-                        <!-- CROSS Site Request Forgery Protection -->
                         @csrf
 
                         <div class="itemForm">
                             <div class="labelForm">Nom</div>
                             <input type="text" class="inputForm {{ $errors->has('name') ? 'error' : '' }}" name="name" id="name">
 
-                            <!-- Error -->
                             @if ($errors->has('name'))
                             <div class="errorInput">
                                 Ce champ est obligatoire.
@@ -92,6 +87,13 @@
                         </div>
 
                         <input type="submit" name="send" value="Envoyer" class="inputSubmit">
+
+                        @if(Session::has('success'))
+                            <div class="alert">
+                                {{Session::get('success')}}
+                            </div>
+                        @endif
+                        
                     </form>
                 </div>
             </section>

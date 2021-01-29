@@ -17,11 +17,13 @@ Route::get('/services/courses-accompagnement-sorties', 'PagesController@shopping
 
 Route::get('/agences', 'PagesController@agencies')->name('agencies');
 Route::get('/entreprise', 'PagesController@company')->name('company');
-Route::get('/recrutement', 'PagesController@recruitment')->name('recruitment');
 Route::get('/mentions-legales', 'PagesController@legal_notices')->name('legal-notices');
 
 Route::get('/contact', 'ContactController@createForm')->name('contact');
 Route::post('/contact', 'ContactController@ContactForm')->name('contact.store');
+
+Route::get('/recrutement', 'RecruitmentController@createForm')->name('recruitment');
+Route::post('/recrutement', 'RecruitmentController@RecruitmentForm')->name('recruitment.store');
 
 /*Route::get('/', function () {
     return view('home');
