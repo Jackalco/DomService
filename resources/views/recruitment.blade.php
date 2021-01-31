@@ -23,7 +23,7 @@
                 </div>
                 <div class="container">            
 
-                    <form action="" method="post" action="{{ route('recruitment.store') }}">
+                    <form enctype="multipart/form-data" action="" method="post" action="{{ route('recruitment.store') }}">
 
                         @csrf
 

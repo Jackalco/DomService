@@ -17,8 +17,8 @@ class RecruitmentController extends Controller
               'email' => 'required|email',
               'phone' => 'required|regex:/^([0-9\s\-\+\(\)]*)$/|min:10',
               'agency'=>'required',
-              'cv' => 'required',
-              'letter' => 'required'
+              'cv' => 'required|mimes:docx,doc,pdf',
+              'letter' => 'required|mimes:docx,doc,pdf'
         ]);
 
         \Mail::send('email/recruitment', array(
@@ -27,15 +27,15 @@ class RecruitmentController extends Controller
               'phone' => $request->get('phone'),
               'agency' => $request->get('agency'),
               'files' => [
-                  public_path($request->file('cv')->getRealPath()),
-                  public_path($request->file('letter')->getRealPath())
+                  'cv' => $request->file('cv'),
+                  'letter' => $request->file('letter')
               ]
           ), function($message) use ($request){
               $message->from($request->email);
-              $message->to('vincent.jacques1311@gmail.com', 'Admin')->subject("Candidature");
+              $message->to('vincent.jacques1311@gmail.com', 'Admin')->subject("Candidature ");
               foreach ($request->files as $file){
                 $message->attach($file, [
-                    'as' => $file->getClientOriginalName(), 
+                    'as' => $file->getClientOriginalName(),
                     'mime' => $file->getMimeType()
                     ]
                 );
