@@ -64,8 +64,9 @@
                             <div class="labelForm">Agence</div>
                             <select class="inputForm {{ $errors->has('agency') ? 'error' : '' }}" name="agency" id="agency">
                                 <option value="">Choississez une agence</option>
-                                <option value="Agence 1">Agence 1</option>
-                                <option value="Agence 2">Agence 2</option>
+                                @foreach($agencies as $agency)
+                                    <option value="{{$agency->email}}">{{$agency->city}}</option>
+                                @endforeach
                             </select>
 
                             @if ($errors->has('agency'))
@@ -77,8 +78,8 @@
 
                         <div class="itemForm">
                             <div class="labelForm">CV</div>
-                            <div>Fichier acceptés : .docx, .doc et .pdf</div>
-                            <input type="file" accept=".docx, .doc, .pdf" class="fileInput {{ $errors->has('cv') ? 'error' : '' }}" name="cv" id="cv">
+                            <div>Fichier acceptés : .docx, .doc, .pdf, .png et .jpg</div>
+                            <input type="file" accept=".docx, .doc, .pdf, .png, .jpg" class="fileInput {{ $errors->has('cv') ? 'error' : '' }}" name="cv" id="cv">
 
                             @if ($errors->has('cv'))
                             <div class="errorInput">
@@ -89,8 +90,8 @@
 
                         <div class="itemForm">
                             <div class="labelForm">Lettre de motivation</div>
-                            <div>Fichier acceptés : .docx, .doc et .pdf</div>
-                            <input type="file" accept=".docx, .doc, .pdf" class="fileInput {{ $errors->has('letter') ? 'error' : '' }}" name="letter" id="letter">
+                            <div>Fichier acceptés : .docx, .doc, .pdf, .png et .jpg</div>
+                            <input type="file" accept=".docx, .doc, .pdf, .png, .jpg" class="fileInput {{ $errors->has('letter') ? 'error' : '' }}" name="letter" id="letter">
 
                             @if ($errors->has('letter'))
                             <div class="errorInput">

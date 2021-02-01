@@ -3,11 +3,14 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Agencies;
 
 class RecruitmentController extends Controller
 {
     public function createForm(Request $request) {
-        return view('recruitment');
+        $agencies = Agencies::all();
+
+        return view('recruitment', compact('agencies'));
       }
   
       public function RecruitmentForm(Request $request) {
@@ -17,8 +20,8 @@ class RecruitmentController extends Controller
               'email' => 'required|email',
               'phone' => 'required|regex:/^([0-9\s\-\+\(\)]*)$/|min:10',
               'agency'=>'required',
-              'cv' => 'required|mimes:docx,doc,pdf',
-              'letter' => 'required|mimes:docx,doc,pdf'
+              'cv' => 'required|mimes:docx,doc,pdf,jpg,png',
+              'letter' => 'required|mimes:docx,doc,pdf,jpg,png'
         ]);
 
         \Mail::send('email/recruitment', array(

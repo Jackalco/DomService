@@ -15,7 +15,6 @@ Route::get('/services/repassage', 'PagesController@ironing')->name('ironing');
 Route::get('/services/relation-prestataire', 'PagesController@relationship_providers')->name('relationship-providers');
 Route::get('/services/courses-accompagnement-sorties', 'PagesController@shopping')->name('shopping');
 
-Route::get('/agences', 'PagesController@agencies')->name('agencies');
 Route::get('/entreprise', 'PagesController@company')->name('company');
 Route::get('/mentions-legales', 'PagesController@legal_notices')->name('legal-notices');
 
@@ -24,6 +23,8 @@ Route::post('/contact', 'ContactController@ContactForm')->name('contact.store');
 
 Route::get('/recrutement', 'RecruitmentController@createForm')->name('recruitment');
 Route::post('/recrutement', 'RecruitmentController@RecruitmentForm')->name('recruitment.store');
+
+Route::get('/agences', 'AgenciesController@index')->name('agencies');
 
 /*Route::get('/', function () {
     return view('home');

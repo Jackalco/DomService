@@ -23,7 +23,7 @@
                 </div>
                 <div class="container">            
 
-                    <form action="" method="post" action="<?php echo e(route('recruitment.store')); ?>">
+                    <form enctype="multipart/form-data" action="" method="post" action="<?php echo e(route('recruitment.store')); ?>">
 
                         <?php echo csrf_field(); ?>
 
@@ -64,8 +64,9 @@
                             <div class="labelForm">Agence</div>
                             <select class="inputForm <?php echo e($errors->has('agency') ? 'error' : ''); ?>" name="agency" id="agency">
                                 <option value="">Choississez une agence</option>
-                                <option value="Agence 1">Agence 1</option>
-                                <option value="Agence 2">Agence 2</option>
+                                <?php $__currentLoopData = $agencies; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $agency): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                                    <option value="<?php echo e($agency->email); ?>"><?php echo e($agency->city); ?></option>
+                                <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                             </select>
 
                             <?php if($errors->has('agency')): ?>
@@ -77,8 +78,8 @@
 
                         <div class="itemForm">
                             <div class="labelForm">CV</div>
-                            <div>Fichier acceptés : .docx, .doc et .pdf</div>
-                            <input type="file" accept=".docx, .doc, .pdf" class="fileInput <?php echo e($errors->has('cv') ? 'error' : ''); ?>" name="cv" id="cv">
+                            <div>Fichier acceptés : .docx, .doc, .pdf, .png et .jpg</div>
+                            <input type="file" accept=".docx, .doc, .pdf, .png, .jpg" class="fileInput <?php echo e($errors->has('cv') ? 'error' : ''); ?>" name="cv" id="cv">
 
                             <?php if($errors->has('cv')): ?>
                             <div class="errorInput">
@@ -89,8 +90,8 @@
 
                         <div class="itemForm">
                             <div class="labelForm">Lettre de motivation</div>
-                            <div>Fichier acceptés : .docx, .doc et .pdf</div>
-                            <input type="file" accept=".docx, .doc, .pdf" class="fileInput <?php echo e($errors->has('letter') ? 'error' : ''); ?>" name="letter" id="letter">
+                            <div>Fichier acceptés : .docx, .doc, .pdf, .png et .jpg</div>
+                            <input type="file" accept=".docx, .doc, .pdf, .png, .jpg" class="fileInput <?php echo e($errors->has('letter') ? 'error' : ''); ?>" name="letter" id="letter">
 
                             <?php if($errors->has('letter')): ?>
                             <div class="errorInput">

@@ -14,9 +14,19 @@
     <body>
         @include('layouts.nav')
         <main>
-            <div>
-                Agences
-            </div>
+            <section id="containerAgencies">
+                <h1>Nos agences</h1>
+                @foreach($agencies as $agency)
+                    <div class="containerAgency">
+                        <div class="itemAgency">
+                            <h3>{{$agency->city}}</h3>
+                        </div>
+                        <div class="itemAgency">Adresse : {{$agency->address}}</div>
+                        <div class="itemAgency">Téléphone : {{$agency->phone}}</div>
+                        <div class="itemAgency">Adresse mail : {{$agency->email}}</div> 
+                    </div>
+                @endforeach
+            </section>
         </main>
         @include('layouts.footer')
     </body>

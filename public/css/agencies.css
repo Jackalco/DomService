@@ -1,0 +1,9 @@
+#containerAgencies {
+    display: flex;
+    flex-direction: column;
+}
+
+.containerAgency {
+    display: flex;
+    flex-direction: column;
+}

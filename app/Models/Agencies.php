@@ -8,5 +8,5 @@ use Illuminate\Database\Eloquent\Model;
 class Agencies extends Model
 {
     use HasFactory;
-    public $fillable = ['city', 'email', 'phone'];
+    public $fillable = ['city', 'email', 'phone', 'address'];
 }

@@ -64,8 +64,9 @@
                             <div class="labelForm">Agence</div>
                             <select class="inputForm {{ $errors->has('agency') ? 'error' : '' }}" name="agency" id="agency">
                                 <option value="">Choississez une agence</option>
-                                <option value="Agence 1">Agence 1</option>
-                                <option value="Agence 2">Agence 2</option>
+                                @foreach($agencies as $agency)
+                                    <option value="{{$agency->email}}">{{$agency->city}}</option>
+                                @endforeach
                             </select>
 
                             @if ($errors->has('agency'))

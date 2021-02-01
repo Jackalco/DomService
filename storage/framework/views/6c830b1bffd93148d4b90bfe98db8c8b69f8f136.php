@@ -14,9 +14,19 @@
     <body>
         <?php echo $__env->make('layouts.nav', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
         <main>
-            <div>
-                Agences
-            </div>
+            <section id="containerAgencies">
+                <h1>Nos agences</h1>
+                <?php $__currentLoopData = $agencies; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $agency): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                    <div class="containerAgency">
+                        <div class="itemAgency">
+                            <h3><?php echo e($agency->city); ?></h3>
+                        </div>
+                        <div class="itemAgency">Adresse : <?php echo e($agency->address); ?></div>
+                        <div class="itemAgency">Téléphone : <?php echo e($agency->phone); ?></div>
+                        <div class="itemAgency">Adresse mail : <?php echo e($agency->email); ?></div> 
+                    </div>
+                <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+            </section>
         </main>
         <?php echo $__env->make('layouts.footer', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
     </body>

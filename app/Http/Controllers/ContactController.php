@@ -3,11 +3,14 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Agencies;
 
 class ContactController extends Controller
 {
     public function createForm(Request $request) {
-        return view('contact');
+        $agencies = Agencies::all();
+
+        return view('contact', compact('agencies'));
       }
   
       public function ContactForm(Request $request) {
