@@ -28,14 +28,9 @@
             <section class="homeRight">
                 <div class="textHome">
                     <h2>Nos services</h2>
-                    <ul>
-                        <li><a class="itemServices" href="">Entretien du logement</a></li>
-                        <li><a class="itemServices" href="">Repassage</a></li>
-                        <li><a class="itemServices" href="">Aide aux seniors</a></li>
-                        <li><a class="itemServices" href="">Courses et accompagnement sorties</a></li>
-                        <li><a class="itemServices" href="">Conciergerie</a></li>
-                        <li><a class="itemServices" href="">Mise en relations avec nos prestataires</a></li>
-                    </ul>
+                    <p>
+                        Découvrez les nombreux services proposés par DOM Services.
+                    </p>
                     <br>
                     <a class="buttonAbout" href="{{ route('services') }}">En savoir plus</a>
                 </div>

@@ -103,15 +103,6 @@ hr {
     text-align: justify;
 }
 
-.itemServices {
-    text-decoration: none;
-    color: black;
-    text-align: left;
-}
-
-.itemServices:hover {
-    font-weight: bold;
-}
 
 @media only screen and (min-width: 1200px) {
     .homeLeft .imageHome {
@@ -155,14 +146,7 @@ hr {
     #textLinkFindAgencies p{
         font-size: 14px;
     }
-
-    .itemServices {
-        font-size: 20px;
-    }
     
-    ul {
-        padding-inline-start: 15px;
-    }
 }
 
 @media only screen and (max-width: 1200px) {
@@ -206,14 +190,6 @@ hr {
 
     #textLinkFindAgencies p{
         font-size: 10px;
-    }
-
-    .itemServices {
-        font-size: 17px;
-    }
-    
-    ul {
-        padding-inline-start: 10px;
     }
     
 }
@@ -261,13 +237,6 @@ hr {
         font-size: 10px;
     }
 
-    .itemServices {
-        font-size: 15px;
-    }
-    
-    ul {
-        padding-inline-start: 10px;
-    }
     
 }
 
@@ -321,13 +290,5 @@ hr {
     #iconLinkFindAgencies{
         display: none;
     }
-
-    .itemServices {
-        font-size: 20px;
-
-    }
     
-    ul {
-        padding-inline-start: 10px;
-    }
 }
