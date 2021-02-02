@@ -15,6 +15,7 @@
         <?php echo $__env->make('layouts.nav', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
         <main>
             <h1>Nos agences</h1>
+            <p>Trouvez l'agence la plus proche de chez vous.</p>
             <section id="containerAgencies">
                 <?php $__currentLoopData = $agencies; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $agency): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                     <div class="containerAgency">

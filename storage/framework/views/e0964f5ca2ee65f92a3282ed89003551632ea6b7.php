@@ -24,6 +24,7 @@
         </div>
         <div class="footerAside">
             <a id="legalNotice" href="<?php echo e(route('legal-mention')); ?>">Mentions légales</a>
+            <p>© DOM Services 2021</p>
         </div>
     </div>
 </footer><?php /**PATH D:\Laravel\WebSiteStage\DomService\resources\views/layouts/footer.blade.php ENDPATH**/ ?>

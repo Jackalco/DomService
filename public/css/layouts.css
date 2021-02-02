@@ -174,7 +174,6 @@ footer {
     text-decoration: underline;
     color: black;
     font-weight: bold;
-    font-size: 13px;
     margin-top: 10px;
 }
 
@@ -194,6 +193,10 @@ footer {
     flex: 1;
     padding-left: 5px;
     padding-right: 5px;
+}
+
+.footerAside:last-child {
+    font-size: 13px;
 }
 
 .footerAsideLink{

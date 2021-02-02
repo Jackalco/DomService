@@ -118,14 +118,14 @@ hr {
     .homeLeft .textHome {
         max-width: 300px;
         max-height: 400px;
-        font-size: 13px;
+        font-size: 16px;
         padding: 10px;
     }
 
     .homeRight .textHome {
         max-width: 300px;
         max-height: 400px;
-        font-size: 13px;
+        font-size: 16px;
         padding: 10px;
     }
 
@@ -163,14 +163,14 @@ hr {
     .homeLeft .textHome {
         max-width: 200px;
         max-height: 300px;
-        font-size: 10px;
+        font-size: 13px;
         padding: 8px;
     }
 
     .homeRight .textHome {
         max-width: 200px;
         max-height: 300px;
-        font-size: 10px;
+        font-size: 13px;
         padding: 8px;
     }
 

@@ -11,6 +11,10 @@
     text-align: justify;
 }
 
+.itemLegalMention:first-child div{
+    justify-content: space-between;
+}
+
 .itemLegalMention p {
     font-size: 16px;
 }
@@ -21,4 +25,8 @@
 
 .itemLegalMention a {
     color: black;
+}
+
+.infoLegalMention {
+    margin-bottom: 15px;
 }

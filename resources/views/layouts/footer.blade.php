@@ -24,6 +24,7 @@
         </div>
         <div class="footerAside">
             <a id="legalNotice" href="{{ route('legal-mention') }}">Mentions légales</a>
+            <p>© DOM Services 2021</p>
         </div>
     </div>
 </footer>

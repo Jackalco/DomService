@@ -15,6 +15,7 @@
         @include('layouts.nav')
         <main>
             <h1>Nos agences</h1>
+            <p>Trouvez l'agence la plus proche de chez vous.</p>
             <section id="containerAgencies">
                 @foreach($agencies as $agency)
                     <div class="containerAgency">
