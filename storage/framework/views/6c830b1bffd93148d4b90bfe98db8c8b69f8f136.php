@@ -14,16 +14,18 @@
     <body>
         <?php echo $__env->make('layouts.nav', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
         <main>
+            <h1>Nos agences</h1>
             <section id="containerAgencies">
-                <h1>Nos agences</h1>
                 <?php $__currentLoopData = $agencies; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $agency): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                     <div class="containerAgency">
-                        <div class="itemAgency">
-                            <h3><?php echo e($agency->city); ?></h3>
+                        <div class="columnAgency">
+                            <div class="itemAgency title"><?php echo e($agency->city); ?></div>
+                            <div class="itemAgency"><strong>Adresse :</strong> <?php echo e($agency->address); ?></div>
                         </div>
-                        <div class="itemAgency">Adresse : <?php echo e($agency->address); ?></div>
-                        <div class="itemAgency">Téléphone : <?php echo e($agency->phone); ?></div>
-                        <div class="itemAgency">Adresse mail : <?php echo e($agency->email); ?></div> 
+                        <div class="columnAgency">
+                            <div class="itemAgency"><strong>Téléphone :</strong> <?php echo e($agency->phone); ?></div>
+                            <div class="itemAgency"><strong>Adresse mail :</strong> <?php echo e($agency->email); ?></div> 
+                        </div>
                     </div>
                 <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
             </section>

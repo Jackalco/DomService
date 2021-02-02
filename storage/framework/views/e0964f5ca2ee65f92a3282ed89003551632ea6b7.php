@@ -15,15 +15,15 @@
         </div>
         <div class="footerAside">
             <a class="footerAsideLink" href="<?php echo e(route('services')); ?>">Services</a>
-            <a class="footerAsideServiceLink" href="#">Entretien du logement</a>
-            <a class="footerAsideServiceLink" href="#">Repassage</a>
-            <a class="footerAsideServiceLink" href="#">Aide aux seniors</a>
-            <a class="footerAsideServiceLink" href="#">Courses et accompagnement sorties</a>
-            <a class="footerAsideServiceLink" href="#">Services de conciergerie</a>
-            <a class="footerAsideServiceLink" href="#">Mise en relation avec nos prestataires</a>
+            <a class="footerAsideServiceLink" href="<?php echo e(route('servicing')); ?>">Entretien du logement</a>
+            <a class="footerAsideServiceLink" href="<?php echo e(route('ironing')); ?>">Repassage</a>
+            <a class="footerAsideServiceLink" href="<?php echo e(route('help-seniors')); ?>">Aide aux seniors</a>
+            <a class="footerAsideServiceLink" href="<?php echo e(route('shopping')); ?>">Courses et accompagnement sorties</a>
+            <a class="footerAsideServiceLink" href="<?php echo e(route('concierge')); ?>">Services de conciergerie</a>
+            <a class="footerAsideServiceLink" href="<?php echo e(route('relationship-providers')); ?>">Mise en relation avec nos prestataires</a>
         </div>
         <div class="footerAside">
-            <a id="legalNotice" href="<?php echo e(route('legal-notices')); ?>">Mentions légales</a>
+            <a id="legalNotice" href="<?php echo e(route('legal-mention')); ?>">Mentions légales</a>
         </div>
     </div>
 </footer><?php /**PATH D:\Laravel\WebSiteStage\DomService\resources\views/layouts/footer.blade.php ENDPATH**/ ?>

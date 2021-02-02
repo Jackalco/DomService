@@ -8,7 +8,7 @@ use App\Models\Agencies;
 class AgenciesController extends Controller
 {
     public function index() {
-        $agencies = Agencies::all();
+        $agencies = Agencies::orderBy('city', 'asc')->get();
 
         return view('agencies', compact('agencies'));
     }

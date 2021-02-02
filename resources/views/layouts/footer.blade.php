@@ -15,15 +15,15 @@
         </div>
         <div class="footerAside">
             <a class="footerAsideLink" href="{{ route('services') }}">Services</a>
-            <a class="footerAsideServiceLink" href="#">Entretien du logement</a>
-            <a class="footerAsideServiceLink" href="#">Repassage</a>
-            <a class="footerAsideServiceLink" href="#">Aide aux seniors</a>
-            <a class="footerAsideServiceLink" href="#">Courses et accompagnement sorties</a>
-            <a class="footerAsideServiceLink" href="#">Services de conciergerie</a>
-            <a class="footerAsideServiceLink" href="#">Mise en relation avec nos prestataires</a>
+            <a class="footerAsideServiceLink" href="{{ route('servicing') }}">Entretien du logement</a>
+            <a class="footerAsideServiceLink" href="{{ route('ironing') }}">Repassage</a>
+            <a class="footerAsideServiceLink" href="{{ route('help-seniors') }}">Aide aux seniors</a>
+            <a class="footerAsideServiceLink" href="{{ route('shopping') }}">Courses et accompagnement sorties</a>
+            <a class="footerAsideServiceLink" href="{{ route('concierge') }}">Services de conciergerie</a>
+            <a class="footerAsideServiceLink" href="{{ route('relationship-providers') }}">Mise en relation avec nos prestataires</a>
         </div>
         <div class="footerAside">
-            <a id="legalNotice" href="{{ route('legal-notices') }}">Mentions légales</a>
+            <a id="legalNotice" href="{{ route('legal-mention') }}">Mentions légales</a>
         </div>
     </div>
 </footer>
