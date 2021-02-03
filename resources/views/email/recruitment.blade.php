@@ -7,4 +7,4 @@ Détails : <br><br>
 Email : {{ $email }} <br>
 Téléphone : {{ $phone }} <br><br>
 
-Merci
+Bonne journée

@@ -1,8 +1,7 @@
 #legalMention {
     display: flex;
     flex-direction: column;
-    width: 60%;
-
+    
 }
 
 .itemLegalMention {
@@ -29,4 +28,26 @@
 
 .infoLegalMention {
     margin-bottom: 15px;
+}
+
+@media only screen and (min-width: 1200px) {
+    #legalMention {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    #legalMention {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #legalMention {
+        width: 90%;
+    }
+
+    .itemLegalMention p {
+        font-size: 15px;
+    }
 }

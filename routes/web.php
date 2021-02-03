@@ -26,60 +26,12 @@ Route::post('/recrutement', 'RecruitmentController@RecruitmentForm')->name('recr
 
 Route::get('/agences', 'AgenciesController@index')->name('agencies');
 
-/*Route::get('/', function () {
-    return view('home');
-})->name('home');
 
-Route::get('/services', function () {
-    return view('services/services');
-})->name('services');
 
-Route::get('/agences', function () {
-    return view('agencies');
-})->name('agencies');
+Auth::routes();
 
-Route::get('/recrutement', function () {
-    return view('recruitment');
-})->name('recruitment');
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::get('/contact', function () {
-    return view('contact');
-})->name('contact');
+Auth::routes();
 
-Route::post('/contact', function(Request $request) {
-    Mail::send(new Contact($request));
-    return redirect('/');
-});
-
-Route::get('/entreprise', function () {
-    return view('company');
-})->name('company');
-
-Route::get('/mentions-legales', function () {
-    return view('legal_notices');
-})->name('legal_notices');
-
-Route::get('/services/entretien-logement', function () {
-    return view('services/servicing');
-})->name('servicing');
-
-Route::get('/services/repassage', function () {
-    return view('services/ironing');
-})->name('ironing');
-
-Route::get('/services/courses-accompagnement-sorties', function () {
-    return view('services/shopping');
-})->name('shopping');
-
-Route::get('/services/aide-seniors', function () {
-    return view('services/help_seniors');
-})->name('help-seniors');
-
-Route::get('/services/conciergerie', function () {
-    return view('services/concierge');
-})->name('concierge');
-
-Route::get('/services/relation-prestataire', function () {
-    return view('services/relationship_providers');
-})->name('relationship-providers');*/
-
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

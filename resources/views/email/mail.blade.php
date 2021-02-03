@@ -8,4 +8,4 @@ Email : {{ $email }} <br>
 Téléphone : {{ $phone }} <br>
 Message : {{ $user_query }} <br><br>
 
-Merci
+Bonne journée.
