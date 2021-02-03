@@ -1,0 +1,32 @@
+#legalMention {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+
+}
+
+.itemLegalMention {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+}
+
+.itemLegalMention:first-child div{
+    justify-content: space-between;
+}
+
+.itemLegalMention p {
+    font-size: 16px;
+}
+
+.itemLegalMention h3 {
+    color:rgb(29, 36, 115);
+}
+
+.itemLegalMention a {
+    color: black;
+}
+
+.infoLegalMention {
+    margin-bottom: 15px;
+}

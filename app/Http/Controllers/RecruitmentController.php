@@ -35,7 +35,7 @@ class RecruitmentController extends Controller
               ]
           ), function($message) use ($request){
               $message->from($request->email);
-              $message->to('vincent.jacques1311@gmail.com', 'Admin')->subject("Candidature ");
+              $message->to($request->agency, 'Admin')->subject("Candidature ");
               foreach ($request->files as $file){
                 $message->attach($file, [
                     'as' => $file->getClientOriginalName(),

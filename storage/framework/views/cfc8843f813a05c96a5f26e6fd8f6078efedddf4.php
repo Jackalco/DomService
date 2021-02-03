@@ -64,8 +64,9 @@
                             <div class="labelForm">Agence</div>
                             <select class="inputForm <?php echo e($errors->has('agency') ? 'error' : ''); ?>" name="agency" id="agency">
                                 <option value="">Choississez une agence</option>
-                                <option value="Agence 1">Agence 1</option>
-                                <option value="Agence 2">Agence 2</option>
+                                <?php $__currentLoopData = $agencies; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $agency): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                                    <option value="<?php echo e($agency->email); ?>"><?php echo e($agency->city); ?></option>
+                                <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                             </select>
 
                             <?php if($errors->has('agency')): ?>

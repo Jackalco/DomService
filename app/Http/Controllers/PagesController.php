@@ -62,9 +62,9 @@ class PagesController extends Controller
         return view('contact');
     }
 
-    public function legal_notices()
+    public function legal_mention()
     {
-        return view('legal_notices');
+        return view('legal_mention');
     }
 
     public function recruitment()
