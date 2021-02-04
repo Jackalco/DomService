@@ -23,7 +23,8 @@
             <a class="footerAsideServiceLink" href="{{ route('relationship-providers') }}">Mise en relation avec nos prestataires</a>
         </div>
         <div class="footerAside">
-            <a id="legalNotice" href="{{ route('legal-mention') }}">Mentions légales</a>
+            <a class="legalNotice" href="{{ route('legal-mention') }}">Mentions légales</a>
+            <a class="legalNotice" href="{{ route('admin') }}">Administrateur</a>
             <p>© DOM Services 2021</p>
         </div>
     </div>

@@ -26,12 +26,15 @@ Route::post('/recrutement', 'RecruitmentController@RecruitmentForm')->name('recr
 
 Route::get('/agences', 'AgenciesController@index')->name('agencies');
 
+Route::get('/admin', 'AdminController@index')->name('admin');
+Route::get('/admin/create', 'AdminController@create')->name('create');
+Route::post('/admin/create', 'AdminController@store')->name('store');
+Route::delete('/admin/delete/{id}', 'AdminController@delete')->name('delete');
+Route::get('/admin/{id}/edit', 'AdminController@edit')->name('edit');
+Route::patch('/admin/{id}', 'AdminController@update')->name('update');
 
+Route::get('/login', 'LoginController@show')->name('login')->middleware('guest');
+Route::post('/login', 'LoginController@login')->name('login')->middleware('guest');
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

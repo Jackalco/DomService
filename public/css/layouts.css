@@ -170,7 +170,7 @@ footer {
     margin-bottom: 15px;
 }
 
-#legalNotice {
+.legalNotice {
     text-decoration: underline;
     color: black;
     font-weight: bold;

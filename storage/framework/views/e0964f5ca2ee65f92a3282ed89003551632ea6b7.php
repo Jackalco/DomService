@@ -23,7 +23,8 @@
             <a class="footerAsideServiceLink" href="<?php echo e(route('relationship-providers')); ?>">Mise en relation avec nos prestataires</a>
         </div>
         <div class="footerAside">
-            <a id="legalNotice" href="<?php echo e(route('legal-mention')); ?>">Mentions légales</a>
+            <a class="legalNotice" href="<?php echo e(route('legal-mention')); ?>">Mentions légales</a>
+            <a class="legalNotice" href="<?php echo e(route('admin')); ?>">Administrateur</a>
             <p>© DOM Services 2021</p>
         </div>
     </div>
