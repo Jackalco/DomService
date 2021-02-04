@@ -15,8 +15,8 @@
         @include('layouts.nav')
         <main>
            <h1>Gestion administrateur</h1>
-           <a class="addButton" href="{{ route('create') }}">Ajouter une agence</a>
-           <section id="container">
+           <a class="addButton" href="{{ route('agency.create') }}">Ajouter une agence</a>
+           <section class="container">
                 @foreach($agencies as $agency)
                     <div class="containerAdmin">
                         <div class="columnAdmin">
@@ -28,8 +28,13 @@
                             <div class="itemAdmin"><strong>Adresse mail :</strong> {{$agency->email}}</div> 
                         </div>
                         <div class="columnAdmin">
-                            <a class="buttonAdmin" href="{{ route('edit', $agency->id) }}">Modifier</a>
-                            <button class="buttonAdmin">Supprimer</button> 
+                            <a class="buttonAdmin" href="{{ route('agency.edit', $agency->id) }}">Modifier</a>
+                            <form action="{{ route('agency.delete', $agency->id) }}" method="post">
+                                @csrf
+                                @method('DELETE')
+                                <button type="submit" class="buttonAdmin">Supprimer</button> 
+                            </form>
+                            
                         </div>
                     </div>
                 @endforeach

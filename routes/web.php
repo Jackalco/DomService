@@ -27,11 +27,11 @@ Route::post('/recrutement', 'RecruitmentController@RecruitmentForm')->name('recr
 Route::get('/agences', 'AgenciesController@index')->name('agencies');
 
 Route::get('/admin', 'AdminController@index')->name('admin');
-Route::get('/admin/create', 'AdminController@create')->name('create');
-Route::post('/admin/create', 'AdminController@store')->name('store');
-Route::delete('/admin/delete/{id}', 'AdminController@delete')->name('delete');
-Route::get('/admin/{id}/edit', 'AdminController@edit')->name('edit');
-Route::patch('/admin/{id}', 'AdminController@update')->name('update');
+Route::get('/admin/agency/create', 'AdminController@create')->name('agency.create');
+Route::post('/admin/agency', 'AdminController@store')->name('agency.store');
+Route::delete('/admin/agency/delete/{id}', 'AdminController@delete')->name('agency.delete');
+Route::get('/admin/agency/{id}/edit', 'AdminController@edit')->name('agency.edit');
+Route::patch('/admin/agency/{id}/updtate', 'AdminController@update')->name('agency.update');
 
 Route::get('/login', 'LoginController@show')->name('login')->middleware('guest');
 Route::post('/login', 'LoginController@login')->name('login')->middleware('guest');
