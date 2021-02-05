@@ -33,8 +33,17 @@
                 <img src="<?php echo e(asset('images/img9.jpg')); ?>" class="franchiseImage" alt="img9">
                 <div class="franchiseContent">
                     <h2>Rejoignez le réseau DOM Services !</h2>
-                    <p>Nous mettons à votre service notre analyse et notre évaluation des besoins afin de créer des prestations au plus juste de vos attentes.</p>
+                    <p>Créer votre entreprise en franchise, vous y songez? <br>
+                    Vous êtes sensible au secteur de l'aide à domicile ? <br>
+                    Pensez à rejoindre le réseau DOM SERVICES !</p>
                     <a class="buttonAbout" href="<?php echo e(route('contact')); ?>">Devenir franchisé</a>
+                </div>
+            </section>
+            <section class="agenciesContainer">
+                <img class="agenciesImage" src="<?php echo e(asset('images/world.jpg')); ?>" alt="Image de la Terre">
+                <div class="agenciesContent">
+                    <h2>Votre agence DOM Services près de chez vous</h2>
+                    <a class="buttonAbout" href="<?php echo e(route('agencies')); ?>">Trouvez l'agence la plus proche</a>
                 </div>
             </section>
             <section class="recruitmentContainer">
@@ -42,30 +51,6 @@
                     Vous avez remarquez l'une de nos annonces ou souhaitez soumettre une candidature spontanée ?<br>
                     <a class="buttonAbout" href="<?php echo e(route('recruitment')); ?>">Nous rejoindre</a>
                 </div>  
-            </section>
-            <!--<section class="homeRight">
-                <div class="textHome">
-                    <h2>Nos services</h2>
-                    <p>Nous mettons à votre service notre analyse et notre évaluation des besoins afin de créer des prestations au plus juste de vos attentes.</p>
-                    <br>
-                    <a class="buttonAbout" href="<?php echo e(route('services')); ?>">En savoir plus</a>
-                </div>
-                <img src="<?php echo e(asset('images/img1.jpg')); ?>" class="imageHome" alt="img1">   
-            </section>-->
-            <section id="linkFindAgencies">
-                <div id="containLinkFindAgencies">
-                    <div id="textLinkFindAgencies">
-                        <h4>Votre agence près de chez vous</h4>
-                        <p>
-                            Trouvez une de nos agences DOM Services étant le plus proche de chez vous.
-                        </p>
-                        <br>
-                        <a class="buttonAbout" href="<?php echo e(route('agencies')); ?>">Trouvez une agence</a>
-                    </div>
-                    <div id="iconLinkFindAgencies">
-                        <i class="fas fa-map-marked-alt"></i>
-                    </div>
-                </div>
             </section>
         </main>
         <?php echo $__env->make('layouts.footer', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
