@@ -10,4 +10,6 @@ class Agencies extends Model
     use HasFactory;
     
     public $fillable = ['city', 'email', 'phone', 'address'];
+
+    public $timestamps = false;
 }

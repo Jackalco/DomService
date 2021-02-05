@@ -18,8 +18,8 @@
                 <img src="<?php echo e(asset('images/img4.jpg')); ?>" class="imageHome" alt="img4">
                 <div class="textHome">
                     <h2>L'entreprise</h2>
-                    <p>DOM SERVICES est un service à la personne crée par Sylvie MENDY en 2015.</p>
-                    <p>L'objectif principal de DOM SERVICES est le bien-être de ses bénéficiaires. Nous l'assurons en développant et améliorant ses services.</p>
+                    <p>DOM Services met en évidence le respect, l'écoute et l'accompagnement de ses bénéficiaires. Grâce à nos ABE et ABES (salariés), DOM Services vous propose des prestations de qualitées. Nous limitons le turn over pour répondre au mieux aux besoins et aux respect des bénéficiares.</p>
+                    <p>L'objectif principal de DOM Services est le bien-être de ses bénéficiaires mais aussi celui de nos ABE et ABES.</p>
                     <br>
                     <a class="buttonAbout" href="<?php echo e(route('company')); ?>">En savoir plus</a>
                 </div>
@@ -27,12 +27,7 @@
             <section class="homeRight">
                 <div class="textHome">
                     <h2>Nos services</h2>
-                    <p>
-                        DOM SERVICES propose plusieurs services pour les personnes ayant besoin d'assistance à domicile afin de les aider dans leurs quotidien.
-                    </p>
-                    <p>
-                        Découvrez les nombreux services proposés par DOM Services.
-                    </p>
+                    <p>Nous mettons à votre service notre analyse et notre évaluation des besoins afin de créer des prestations au plus juste de vos attentes.</p>
                     <br>
                     <a class="buttonAbout" href="<?php echo e(route('services')); ?>">En savoir plus</a>
                 </div>

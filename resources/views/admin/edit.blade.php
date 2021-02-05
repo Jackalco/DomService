@@ -14,7 +14,64 @@
     <body>
         @include('layouts.nav')
         <main>
-           <h1>{{$agency->city}}</h1>
+            <h1>Modifier l'agence</h1>
+           <form method="post" action="{{ route('agency.update', $agency->id) }}" enctype="multipart/form-data">
+
+                @csrf
+                @method('PATCH')
+
+                    <div class="itemForm">
+                        <div class="labelForm">Ville</div>
+                        <input class="inputForm {{ $errors->has('city') ? 'error' : '' }}" type="text" name="city" id="city" value="{{old('city')?? $agency->city}}">
+
+                        @if ($errors->has('city'))
+                        <div class="errorInput">
+                            Ce champ est obligatoire.
+                        </div>
+                        @endif
+
+                    </div>
+                    <div class="itemForm">
+                        <div class="labelForm">Adresse</div>
+                        <input class="inputForm {{ $errors->has('address') ? 'error' : '' }}" type="text" name="address" id="address" value="{{old('address')?? $agency->address}}">
+
+                        @if ($errors->has('address'))
+                        <div class="errorInput">
+                            Ce champ est obligatoire.
+                        </div>
+                        @endif
+
+                    </div>
+                    <div class="itemForm">
+                        <div class="labelForm">Téléphone</div>
+                        <input class="inputForm {{ $errors->has('phone') ? 'error' : '' }}" type="text" name="phone" id="phone" value="{{old('phone')?? $agency->phone}}">
+
+                        @if ($errors->has('phone'))
+                        <div class="errorInput">
+                            Ce champ est obligatoire.
+                        </div>
+                        @endif
+
+                    </div>
+                    <div class="itemForm">
+                        <div class="labelForm">Adresse mail</div>
+                        <input class="inputForm {{ $errors->has('email') ? 'error' : '' }}" type="text" name="email" id="email" value="{{old('email')?? $agency->email}}">
+
+                        @if ($errors->has('email'))
+                        <div class="errorInput">
+                            Ce champ est obligatoire.
+                        </div>
+                        @endif
+
+                    </div>
+                    <input type="submit" name="create" value="Modifier" class="inputSubmit">
+
+                    @if(Session::has('success'))
+                        <div class="alert">
+                            {{Session::get('success')}}
+                        </div>
+                    @endif
+                </form>
         </main>
         @include('layouts.footer')
     </body>

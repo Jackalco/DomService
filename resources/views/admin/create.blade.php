@@ -14,11 +14,15 @@
     <body>
         @include('layouts.nav')
         <main>
+            <h1>Ajouter une agence</h1>
             <div class="container">
-                <form method="post" action="{{ route('agency.store') }}">
-                    <div class="itemForm">
+                <form method="post" action="{{ route('agency.store') }}" enctype="multipart/form-data">
+
+                @csrf
+
+                <div class="itemForm">
                         <div class="labelForm">Ville</div>
-                        <input class="inputForm {{ $errors->has('city') ? 'error' : '' }}" type="text">
+                        <input class="inputForm {{ $errors->has('city') ? 'error' : '' }}" type="text" name="city" id="city">
 
                         @if ($errors->has('city'))
                         <div class="errorInput">
@@ -27,9 +31,10 @@
                         @endif
 
                     </div>
+
                     <div class="itemForm">
                         <div class="labelForm">Adresse</div>
-                        <input class="inputForm {{ $errors->has('address') ? 'error' : '' }}" type="text">
+                        <input class="inputForm {{ $errors->has('address') ? 'error' : '' }}" type="text" name="address" id="address">
 
                         @if ($errors->has('address'))
                         <div class="errorInput">
@@ -38,9 +43,10 @@
                         @endif
 
                     </div>
+
                     <div class="itemForm">
                         <div class="labelForm">Téléphone</div>
-                        <input class="inputForm {{ $errors->has('phone') ? 'error' : '' }}" type="text">
+                        <input class="inputForm {{ $errors->has('phone') ? 'error' : '' }}" type="text" name="phone" id="phone">
 
                         @if ($errors->has('phone'))
                         <div class="errorInput">
@@ -49,9 +55,10 @@
                         @endif
 
                     </div>
+
                     <div class="itemForm">
                         <div class="labelForm">Adresse mail</div>
-                        <input class="inputForm {{ $errors->has('email') ? 'error' : '' }}" type="text">
+                        <input class="inputForm {{ $errors->has('email') ? 'error' : '' }}" type="text" name="email" id="email">
 
                         @if ($errors->has('email'))
                         <div class="errorInput">
