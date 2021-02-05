@@ -12,7 +12,6 @@
     width: 100%;
     font-size: 18px;
     border-bottom: 1px solid black;
-    flex-wrap: wrap;
 }
 
 .containerAdmin:last-child {
@@ -22,9 +21,8 @@
 .columnAdmin {
     display: flex;
     flex-direction: column;
-    padding-left: 20px;
-    padding-right: 20px;
     flex: 1;
+    flex-wrap: wrap;
 }
 
 form {
@@ -37,7 +35,6 @@ form {
 }
 
 .title {
-    font-size: 27px;
     font-weight: bold;
     color:rgb(29, 36, 115);
 }
@@ -54,6 +51,7 @@ form {
     margin-right: 75px;
     margin-top: 10px;
     cursor: pointer;
+    width: -webkit-fill-available;
     transition-duration: 0.5s;
 }
 
@@ -82,6 +80,11 @@ form {
     .title {
         font-size: 27px;
     }
+
+    .columnAdmin {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
 
 @media only screen and (max-width: 1200px) {
@@ -90,17 +93,27 @@ form {
     }
     
     .title {
-        font-size: 25px;
+        font-size: 23px;
+    }
+
+    .columnAdmin {
+        padding-left: 15px;
+        padding-right: 15px;
     }
 }
 
 @media only screen and (max-width: 768px) {
     .containerAdmin {
-        font-size: 14px;
+        font-size: 12px;
     }
     
     .title {
-        font-size: 23px;
+        font-size: 20px;
+    }
+
+    .columnAdmin {
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }
 

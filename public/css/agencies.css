@@ -38,6 +38,11 @@
     color:rgb(29, 36, 115);
 }
 
+.googleMap {
+    height: 500px;
+    width: 100%;
+}
+
 @media only screen and (min-width: 1200px) {
     .containerAgency {
         font-size: 18px;

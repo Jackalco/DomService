@@ -8,7 +8,7 @@
         <script src="https://kit.fontawesome.com/172e84d6d0.js" crossorigin="anonymous"></script>
         <script src="<?php echo e(asset('js/navbar.js')); ?>"></script>
 
-        <title>DOM Service</title>
+        <title>DOM Services</title>
 
     </head>
     <body>
@@ -23,7 +23,7 @@
                 </div>
                 <div class="container">            
 
-                    <form action="" method="post" action="<?php echo e(route('contact.store')); ?>">
+                    <form method="post" action="<?php echo e(route('contact.store')); ?>">
 
                         <?php echo csrf_field(); ?>
 

@@ -56,3 +56,19 @@
     color: green;
     margin-top: 20px;
 }
+
+.returnButton {
+    text-decoration: none;
+    color: white;
+    background-color:rgb(29, 36, 115);
+    border-radius: 2px;
+    font-size: 18px;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    transition-duration: 0.5s;
+}
+
+.returnButton:hover {
+    background-color: rgb(0, 0, 115);
+}

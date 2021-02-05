@@ -14,8 +14,9 @@
     <body>
         @include('layouts.nav')
         <main>
+            <a class="returnButton" href="{{ route('admin') }}">Retour</a>
             <h1>Modifier l'agence</h1>
-           <form method="post" action="{{ route('agency.update', $agency->id) }}" enctype="multipart/form-data">
+            <form method="post" action="{{ route('agency.update', $agency->id) }}" enctype="multipart/form-data">
 
                 @csrf
                 @method('PATCH')

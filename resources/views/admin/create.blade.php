@@ -14,21 +14,14 @@
     <body>
         @include('layouts.nav')
         <main>
+            <a class="returnButton" href="{{ route('admin') }}">Retour</a>
             <h1>Ajouter une agence</h1>
             <div class="container">
-<<<<<<< HEAD
                 <form method="post" action="{{ route('agency.store') }}" enctype="multipart/form-data">
 
                 @csrf
 
                 <div class="itemForm">
-=======
-                <form method="post" action="{{ route('agency.store') }}">
-
-                    @csrf
-
-                    <div class="itemForm">
->>>>>>> b898f5d423224fb8d41c5b60010d164246ef229c
                         <div class="labelForm">Ville</div>
                         <input class="inputForm {{ $errors->has('city') ? 'error' : '' }}" type="text" name="city" id="city">
 
