@@ -17,6 +17,7 @@ class ContactController extends Controller
   
         $this->validate($request, [
               'name' => 'required',
+              'subject' =>'required',
               'email' => 'required|email',
               'phone' => 'required|regex:/^([0-9\s\-\+\(\)]*)$/|min:10',
               'agency'=>'required',
@@ -31,7 +32,7 @@ class ContactController extends Controller
               'user_query' => $request->get('message'),
           ), function($message) use ($request){
               $message->from($request->email);
-              $message->to($request->agency, 'Admin')->subject("Devis");
+              $message->to($request->agency, 'Admin')->subject($request->subject);
         });
   
           return back()->with('success', 'Votre message a bien été envoyé');

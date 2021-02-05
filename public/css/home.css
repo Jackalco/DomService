@@ -1,54 +1,3 @@
-.homeLeft {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    
-}
-
-.homeLeft:hover .textHome{
-    background-color:rgb(255, 255, 100);
-}
-
-.homeRight {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-bottom: 20px;
-    margin-top: 20px;
-}
-
-.homeRight:hover .textHome{
-    background-color:rgb(255, 255, 100);
-}
-
-.homeLeft .imageHome {
-    border-radius: 10px 0px 0px 10px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-}
-
-.homeRight .imageHome {
-    border-radius: 0px 10px 10px 0px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-}
-
-.homeLeft .textHome {
-    text-align: justify;
-    background-color:rgb(255, 255, 160);
-    border-radius: 0px 10px 10px 0px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition-duration: 0.5s;
-}
-
-.homeRight .textHome {
-    text-align: justify;
-    background-color:rgb(255, 255, 160);
-    border-radius: 10px 0px 0px 10px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition-duration: 0.5s;
-}
-
 hr {
     border-top: 1px solid black;
     margin: 10px;
@@ -57,12 +6,13 @@ hr {
 .buttonAbout {
     text-decoration: none;
     padding: 10px;
-    background-color:rgb(29, 36, 115);
+    background-color:rgb(255, 238, 46);
     color: white;
     transition-duration: 0.5s;
     margin-top: 10px;
     border-radius: 2px;
     transition-duration: 0.5s;
+    text-shadow: 1px 1px gray;
 }
 
 .buttonAbout:hover {
@@ -103,34 +53,82 @@ hr {
     text-align: justify;
 }
 
+.companyContainer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 350px;
+    justify-content: center;
+}
+
+.companyImage {
+    max-height: 350px;
+    width: 400px;
+}
+
+.companyContent {
+    padding: 20px;
+    width: 400px;
+    text-align: justify;
+}
+
+.franchiseContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+
+.franchiseImage {
+    height: auto;
+    width: 55%;
+    z-index: 2;
+    margin-right: -10%;
+    border-radius: 40px;
+}
+
+.franchiseContent {
+    float: right;
+    background-color:rgb(215, 215, 215);
+    height: 200px;
+    width: 40%;
+    padding-left: 20px;
+    padding: 10px;
+    z-index: 3;
+    border-radius: 10px;
+}
+
+.franchiseContent p {
+    margin-bottom: 40px;
+}
+
+.recruitmentContainer {
+    background-image: url('/images/img1.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.recruitmentContent {
+    text-shadow: 1px 1px gray;
+    text-align: right;
+    float: right;
+    color: white;
+    padding: 20px;
+    width: 25%;
+    height: inherit;
+    font-size: 28px;
+    line-height: 50px;
+}
 
 @media only screen and (min-width: 1200px) {
-    .homeLeft .imageHome {
-        max-width: 750px;
-        max-height: 400px;
-    }
-
-    .homeRight .imageHome {
-        max-width: 750px;
-        max-height: 400px;
-    }
-
-    .homeLeft .textHome {
-        max-width: 300px;
-        max-height: 400px;
-        font-size: 16px;
-        padding: 10px;
-    }
-
-    .homeRight .textHome {
-        max-width: 300px;
-        max-height: 400px;
-        font-size: 16px;
-        padding: 10px;
-    }
 
     .buttonAbout {
-        font-size: 14px;
+        font-size: 18px;
         padding: 14px;
     }
 
@@ -150,29 +148,6 @@ hr {
 }
 
 @media only screen and (max-width: 1200px) {
-    .homeLeft .imageHome {
-        max-width: 450px;
-        max-height: 300px;
-    }
-
-    .homeRight .imageHome {
-        max-width: 450px;
-        max-height: 300px;
-    }
-
-    .homeLeft .textHome {
-        max-width: 200px;
-        max-height: 300px;
-        font-size: 11px;
-        padding: 8px;
-    }
-
-    .homeRight .textHome {
-        max-width: 200px;
-        max-height: 300px;
-        font-size: 13px;
-        padding: 8px;
-    }
 
     .buttonAbout {
         font-size: 10px;
@@ -191,33 +166,12 @@ hr {
     #textLinkFindAgencies p{
         font-size: 13px;
     }
+
+    
     
 }
 
 @media only screen and (max-width: 900px) {
-    .homeLeft .imageHome {
-        max-width: 350px;
-        max-height: 275px;
-    }
-
-    .homeRight .imageHome {
-        max-width: 350px;
-        max-height: 275px;
-    }
-
-    .homeLeft .textHome {
-        max-width: 200px;
-        max-height: 275px;
-        font-size: 10px;
-        padding: 8px;
-    }
-
-    .homeRight .textHome {
-        max-width: 200px;
-        max-height: 275px;
-        font-size: 10px;
-        padding: 8px;
-    }
 
     .buttonAbout {
         font-size: 10px;
@@ -241,33 +195,6 @@ hr {
 }
 
 @media only screen and (max-width: 768px){
-    .homeLeft .imageHome {
-        display: none;
-    }
-
-    .homeRight .imageHome {
-        display: none;
-    }
-
-    .homeLeft .textHome {
-        max-width: 400px;
-        max-height: 450px;
-        font-size: 13px;
-        padding: 10px;
-        padding-bottom: 25px;
-        border-radius: 10px;
-    }
-
-    .homeRight .textHome {
-        max-width: 400px;
-        max-height: 450px;
-        font-size: 13px;
-        padding-top: 10px;
-        padding-left: 25px;
-        padding-right: 25px;
-        padding-bottom: 25px;
-        border-radius: 10px;
-    }
 
     .buttonAbout {
         font-size: 14px;

@@ -39,6 +39,21 @@
                         </div>
 
                         <div class="itemForm">
+                            <div class="labelForm">Sujet</div>
+                            <select class="inputForm {{ $errors->has('subject') ? 'error' : '' }}" name="subject" id="subject">
+                                <option value="">Choississez un sujet</option>                         
+                                    <option value="Demande de devis">Demande de devis</option>
+                                    <option value="Demande de franchise">Demande de franchise</option>
+                            </select>
+
+                            @if ($errors->has('subject'))
+                            <div class="errorInput">
+                                Ce champ est obligatoire.
+                            </div>
+                            @endif
+                        </div>
+
+                        <div class="itemForm">
                             <div class="labelForm">Email</div>
                             <input type="email" class="inputForm {{ $errors->has('email') ? 'error' : '' }}" name="email" id="email">
 

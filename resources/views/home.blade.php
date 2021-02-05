@@ -14,17 +14,36 @@
     <body>
         @include('layouts.nav')
         <main>
-            <section class="homeLeft">
-                <img src="{{ asset('images/img4.jpg') }}" class="imageHome" alt="img4">
-                <div class="textHome">
+            <section class="companyContainer">
+                <img src="{{ asset('images/img3.jpg') }}" class="companyContent" alt="img3">
+                <div class="companyContent">
                     <h2>L'entreprise</h2>
-                    <p>DOM Services met en évidence le respect, l'écoute et l'accompagnement de ses bénéficiaires. Grâce à nos ABE et ABES (salariés), DOM Services vous propose des prestations de qualitées. Nous limitons le turn over pour répondre au mieux aux besoins et aux respect des bénéficiares.</p>
-                    <p>L'objectif principal de DOM Services est le bien-être de ses bénéficiaires mais aussi celui de nos ABE et ABES.</p>
-                    <br>
-                    <a class="buttonAbout" href="{{ route('company') }}">En savoir plus</a>
+                    <p>
+                        DOM SERVICES met en évidence le respect, l’écoute et l’accompagnement de ses bénéficiaires.
+                    </p>
+                    <p>
+                        Grâce à nos ABE et ABES (salariés), DOM SERVICES vous propose des prestations de qualités. Nous limitons le turn over pour répondre au mieux aux besoins et au respect des bénéficiaires. 
+                    </p>
+                    <p>
+                        L’objectif principal de DOM SERVICES est le bien-être de ses bénéficiaires mais aussi celui de ses ABE et ABES.
+                    </p>
                 </div>
             </section>
-            <section class="homeRight">
+            <section class="franchiseContainer">
+                <img src="{{ asset('images/img9.jpg') }}" class="franchiseImage" alt="img9">
+                <div class="franchiseContent">
+                    <h2>Rejoignez le réseau DOM Services !</h2>
+                    <p>Nous mettons à votre service notre analyse et notre évaluation des besoins afin de créer des prestations au plus juste de vos attentes.</p>
+                    <a class="buttonAbout" href="{{ route('contact') }}">Devenir franchisé</a>
+                </div>
+            </section>
+            <section class="recruitmentContainer">
+                <div class="recruitmentContent">
+                    Vous avez remarquez l'une de nos annonces ou souhaitez soumettre une candidature spontanée ?<br>
+                    <a class="buttonAbout" href="{{ route('recruitment') }}">Nous rejoindre</a>
+                </div>  
+            </section>
+            <!--<section class="homeRight">
                 <div class="textHome">
                     <h2>Nos services</h2>
                     <p>Nous mettons à votre service notre analyse et notre évaluation des besoins afin de créer des prestations au plus juste de vos attentes.</p>
@@ -32,21 +51,7 @@
                     <a class="buttonAbout" href="{{ route('services') }}">En savoir plus</a>
                 </div>
                 <img src="{{ asset('images/img1.jpg') }}" class="imageHome" alt="img1">   
-            </section>
-            <section class="homeLeft">
-                <img src="{{ asset('images/img3.jpg') }}" class="imageHome" alt="img3">
-                <div class="textHome">
-                    <h2>Rejoignez nous !</h2>
-                    <p>
-                        Vous avez remarquez l'une de nos annonces ou souhaitez soumettre une candidature spontanée ?
-                    </p>
-                    <p>
-                        Alors n'hésitez pas à remplir notre formulaire de recrutement.
-                    </p>
-                    <br>
-                    <a class="buttonAbout" href="{{ route('recruitment') }}">En savoir plus</a>
-                </div>
-            </section>
+            </section>-->
             <section id="linkFindAgencies">
                 <div id="containLinkFindAgencies">
                     <div id="textLinkFindAgencies">
