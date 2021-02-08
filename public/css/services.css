@@ -16,6 +16,9 @@
 .imageInfoServices {
     max-height: 350px;
     width: 500px;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
 }
 
 .textInfoServices {
@@ -24,6 +27,9 @@
     font-size: 20px;
     text-align: justify;
     background-color:rgb(215, 215, 215);
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
 }
 
 .iconContainer {
@@ -37,6 +43,7 @@
     text-align: center;
     margin: 1em;
     font-weight: bold;
+    
 }
 
 .linkServices {
@@ -49,12 +56,18 @@
     border-radius: 50%;
     transition-duration: 0.5s;
     color: black;
+    padding: 10px;
+    margin-bottom: 40px;
+    height: 250px;
+    width: 250px;
 }
 
 .linkServices:hover {
     box-shadow: 0 4px 10px 0 black;
     background-color: rgb(29, 36, 115);
     color: white;
+    height: 260px;
+    width: 260px;
 }
 
 .imageServices {
@@ -130,33 +143,29 @@ li {
     flex-direction: column;
 }
 
-@media only screen and (max-width: 1920px) {
-    .iconServices {
-        font-size: 100px;
-    }
-    
-    .titleIcon {
-        font-size: 19px;
-    }
-    
-    .linkServices {
-        padding: 10px;
-        margin-bottom: 40px;
-        height: 250px;
-        width: 250px;
-    }
-    
-    .linkServices:hover {
-        height: 260px;
-        width: 260px;
-    }
-  
+.iconServices {
+    font-size: 100px;
 }
 
 @media only screen and (min-width : 1200px) {
     .linkServices {
         margin-left: 50px;
         margin-right: 50px;
+    }
+
+    .imageInfoServices {
+        width: 500px;
+        border-bottom: 1px solid black;
+        border-top: 1px solid black;
+        border-right: 1px solid black;
+    }
+
+    .textInfoServices {
+        width: 400px;
+        font-size: 18px;
+        border-bottom: 1px solid black;
+        border-top: 1px solid black;
+        border-left: 1px solid black;
     }
 }
 
@@ -165,19 +174,21 @@ li {
         margin-left: 25px;
         margin-right: 25px;
     }
-}
 
-@media only screen and (max-width: 768px) {
-    #titleServices {
-        padding-right: 0em;
-    }
-
-    #imageInfoServices {
+    .imageInfoServices {
         display: none;
     }
 
-    #textInfoServices {
-        margin-right: 0px;
+    .textInfoServices {
+        width: 400px;
+        font-size: 18px;
+        border: 1px solid black;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .titleServices {
+        padding-right: 0em;
     }
 
     .linkServices {

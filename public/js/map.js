@@ -1,31 +1,12 @@
 // Variables
 var map;
 var infowindow;
-var  data = [
-	//['Nom', 'Adresse', Latitude, Longitude, 'Catégorie'],
-	//['Nante', 'Ville de Nantes', 47.218371, -1.553621000000021, 'cat1'],
-	//['Home', '16 Grande Rue, 44160 Pontchâteau, France', 47.4353077, -2.0916818000000603, 'cat2'],
-	["Davy", "4 Ter Impasse Aimé Césaire, 44550 Montoir-de-Bretagne", 47.32549398026232, -2.13631336253294],
-	["Productys", "9 Rue du 28 Février 1943, 44600 Saint-Nazaire", 47.27408674739853, -2.2079263306444923]
-];
-
-var x = JSON.stringify(document.getElementsByClassName("containerAgency").value);
-	
-
-
-var icons = {
-	red: 'https://mt.googleapis.com/vt/icon/name=icons/spotlight/spotlight-poi.png&scale=1',
-	//red: 'http://maps.google.com/mapfiles/ms/icons/yellow-dot.png',
-	blue: 'https://mt.google.com/vt/icon?color=ff004C13&name=icons/spotlight/spotlight-waypoint-blue.png',
-	green: 'https://mt.google.com/vt/icon?psize=30&font=fonts/arialuni_t.ttf&color=ff304C13&name=icons/spotlight/spotlight-waypoint-a.png&ax=43&ay=48&text=%E2%80%A2',
-	purple: 'https://mt.google.com/vt/icon/name=icons/spotlight/spotlight-ad.png',
-
-	//green_txt: 'https://mt.google.com/vt/icon?psize=16&font=fonts/Roboto-Regular.ttf&color=ff330000&name=icons/spotlight/spotlight-waypoint-a.png&ax=44&ay=48&scale=1&text='
-}
+var color = 'https://mt.googleapis.com/vt/icon/name=icons/spotlight/spotlight-poi.png&scale=1'
 
 // Initialisation de la carte
 function initializeMap() {
-	console.log(x)
+	var x = Array.from(document.getElementsByClassName("containerAgency")).map(div=>JSON.parse(div.attributes.value.value));
+	console.log(x);
 	var styles = [{
 		"featureType": "poi",
 		"elementType": "labels",
@@ -58,20 +39,18 @@ function initializeMap() {
 	});
 	
 	// Création des markers
-	for (var i = 0; i < data.length; i++) {
-		var row = data[i];
-		var index = 0
-		var nom = row[index++];
-		var address = row[index++];
-		var lat = row[index++];
-		var lng = row[index++];
-		var category = row[index++];
-		var icon = icons.red;
+	for (var i = 0; i < x.length; i++) {
+		var row = x[i];
+		var nom = row.city;
+		var address = row.address;
+		var phone = row.phone;
+		var lat = row.lat;
+		var lng = row.lng;
+		var icon = color;
 
 		var infos = '<h3>' + nom + '</h3>' +
-			'<div>' + address + '</div>' +
-			'</br>' +
-			'<b>Catégorie : </b>' + category + '';
+			'<div>' + address + '</div>' + 
+			'<div>' + phone + '</div>';
 		// Ajout du marker
 		addMarker(lat, lng, icon, infos);
 	}
