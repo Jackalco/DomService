@@ -33,6 +33,13 @@
                         <img class="imageAboutCompany" src="<?php echo e(asset('images/img6.jpg')); ?>" alt="img6">
                     </div>
                     <div class="itemAboutCompany">
+                        <div class="textAboutCompany">
+                            <h2>Qui sommes nous</h2>
+                        </div>                             
+                        <iframe class="videoCompany" width="560" height="315" src="https://www.youtube.com/embed/29H7IwJo9O8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>                     
+                    </div>
+                    <div class="itemAboutCompany">
                         <img class="imageAboutCompany" src="<?php echo e(asset('images/img5.jpg')); ?>" alt="img5">
                         <div class="textAboutCompany">
                             <h2>Nos valeurs</h2>

@@ -15,7 +15,7 @@
         @include('layouts.nav')
         <main>
             <section class="companyContainer">
-                <img src="{{ asset('images/img3.jpg') }}" class="companyContent" alt="img3">
+                <img src="{{ asset('images/img3.jpg') }}" class="companyImage" alt="img3">
                 <div class="companyContent">
                     <h2>L'entreprise</h2>
                     <p>
@@ -52,6 +52,25 @@
                     <a class="buttonAbout" href="{{ route('recruitment') }}">Nous rejoindre</a>
                 </div>  
             </section>
+            <aside>
+                <div class="itemAside">
+                    <div>Avis clients</div>
+                    <div>4,8/5</div>
+                    <div>
+                        <i class="fas fa-star iconAside"></i>
+                        <i class="fas fa-star iconAside"></i>
+                        <i class="fas fa-star iconAside"></i>
+                        <i class="fas fa-star iconAside"></i>
+                        <i class="fas fa-star-half iconAside"></i>
+                    </div>
+                </div>
+                <div class="itemAside">
+                    <div>09.72.58.61.65</div>
+                    <div>Lundi au Vendredi :</div>
+                    <div>9h30 - 12h</div>
+                    <div>13h - 15h30</div>
+                </div>
+            </aside>
         </main>
         @include('layouts.footer')
     </body>

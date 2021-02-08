@@ -1,35 +1,29 @@
-#aboutServices {
+.aboutServices {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#titleServices {
-    padding-right: 14.4em;
-    font-size: 2em;
-}
-
-#infoServices {
+.infoServices {
     display: flex;
     flex-direction: row;
+    width: 100%;
+    height: 350px;
     justify-content: center;
-    width: 800px;
-    height: 300px;
-    margin-bottom: 25px;
+    margin-bottom: 50px;
 }
 
-#imageInfoServices {
-    width: 350px;
-    height: 250px;
-    border-radius: 50%;
+.imageInfoServices {
+    max-height: 350px;
+    width: 500px;
 }
 
-#textInfoServices {
-    text-align: justify;
-    width: 250px;
-    padding: 10px;
+.textInfoServices {
+    padding: 20px;
+    width: 400px;
     font-size: 20px;
-    margin-right: 50px;
+    text-align: justify;
+    background-color:rgb(215, 215, 215);
 }
 
 .iconContainer {

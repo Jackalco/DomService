@@ -14,16 +14,15 @@
     <body>
         @include('layouts.nav')
         <main>
-            <section id="aboutServices">
-                <h1 id="titleServices">Nos services</h1>
-                <div id="infoServices">
-                    <p id="textInfoServices">
-                        DOM SERVICES propose plusieurs services pour les personnes ayant besoin d'assistance à domicile afin de les aider dans leurs quotidien.
-                        <br>
-                        <br>
-                        DOM SERVICES est composé de profesionnels formés pour répondre au mieux aux besoins des bénéficiaires.
-                    </p>
-                    <img id="imageInfoServices" src="{{ asset('images/img1.jpg') }}" alt="img1">
+            <section class="aboutServices"> 
+                <div class="infoServices">
+                    <div class="textInfoServices">
+                        <h1>Nos services</h1>
+                        <p>
+                        Nous mettons à vos services notre analyse et une évaluation de vos besoins afin de créer des prestations au plus juste de vos attentes.
+                        </p>    
+                    </div>
+                    <img class="imageInfoServices" src="{{ asset('images/img10.jpg') }}" alt="img10">
                 </div>
                 <div class="iconContainer">
                     <a class="linkServices" href="{{ route('servicing') }}">
