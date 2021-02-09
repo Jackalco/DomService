@@ -8,11 +8,12 @@
     border-radius: 2px;
     transition-duration: 0.5s;
     text-shadow: 1px 1px gray;
+    box-shadow: 0 1px 4px 0 gray;
 }
 
 .buttonAbout:hover {
     background-color:   rgb(0, 0, 115);
-    box-shadow: 0 7px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 2px 5px 0 black;
 }
 
 .companyContainer {
@@ -77,6 +78,16 @@
     height: 400px;
     margin-top: 50px;
     margin-bottom: 50px;
+}
+
+.layerRecruitment {
+    width: 100%;
+    height: 100%;
+    transition-duration: 0.25s;
+}
+
+.layerRecruitment:hover {
+    background-color: rgba(0,0,0,0.5);
 }
 
 .recruitmentContent {
@@ -168,18 +179,14 @@ aside {
     .agenciesImage {
         height: 350px;
         width: 500px;
-        border-bottom: 1px solid black;
-        border-top: 1px solid black;
-        border-left: 1px solid black;
+
     }
     
     .agenciesContent {
         height: 350px;
         width: 500px;
         text-align: center;
-        border-bottom: 1px solid black;
-        border-top: 1px solid black;
-        border-right: 1px solid black;
+
     }
     
     .agenciesContent h2 {
@@ -223,7 +230,7 @@ aside {
     
     .franchiseContent {
         height: 250px;
-        padding: 35px;
+        padding: 30px;
         border-radius: 10px;
     }
     
@@ -267,8 +274,8 @@ aside {
 @media only screen and (max-width: 900px) {
 
     .buttonAbout {
-        font-size: 10px;
-        padding: 8px;
+        font-size: 12px;
+        padding: 9px;
     }
 
     .buttonAbout:hover {
@@ -292,8 +299,9 @@ aside {
     
     .franchiseContent {
         height: 200px;
-        padding: 35px;
+        padding: 25px;
         border-radius: 10px;
+        width: 40%;
     }
 
     .franchiseContent h2 {
@@ -354,15 +362,16 @@ aside {
     }
     
     .franchiseContent {
-        height: 250px;
-        padding: 35px;
+        height: 275px;
+        padding: 15px;
         border-radius: 10px;
+
     }
     
     .franchiseContent p {
         font-size: 15px;
         margin-bottom: 30px;
-        line-height: 25px;
+        line-height: 20px;
     }
     
     .agenciesContent h2 {
@@ -372,8 +381,8 @@ aside {
     
     .recruitmentContent {
         padding: 20px;
-        width: 25%;
-        font-size: 24px;
+        width: 30%;
+        font-size: 22px;
         line-height: 35px;
     }
 

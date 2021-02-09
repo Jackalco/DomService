@@ -47,10 +47,13 @@
                 </div>
             </section>
             <section class="recruitmentContainer">
-                <div class="recruitmentContent">
-                    Vous avez remarquez l'une de nos annonces ou souhaitez soumettre une candidature spontanée ?<br>
-                    <a class="buttonAbout" href="{{ route('recruitment') }}">Nous rejoindre</a>
-                </div>  
+                <div class="layerRecruitment">
+                    <div class="recruitmentContent">
+                        Vous avez remarquez l'une de nos annonces ou souhaitez soumettre une candidature spontanée ?<br>
+                        <a class="buttonAbout" href="{{ route('recruitment') }}">Nous rejoindre</a>
+                    </div>
+                </div>
+                  
             </section>
             <aside>
                 <div class="itemAside">

@@ -8,11 +8,6 @@
     font-size: 40px;
 }
 
-.contentAboutCompany {
-    display: flex;
-    flex-direction: column;
-}
-
 .textAboutCompany {
     font-size: 20px;
     text-align: justify;
@@ -43,6 +38,10 @@
     border-radius: 5px;
 }
 
+.videoItem {
+    align-items: center;
+}
+
 li {
     font-size: 25px;
     margin-bottom: 5px;
@@ -63,6 +62,10 @@ li {
 
     .itemAboutCompany {
         flex-direction: column;
+    }
+
+    .videoItem {
+        align-items: unset;
     }
 }
 

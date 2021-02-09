@@ -16,7 +16,6 @@
         <main>
             <section class="aboutCompany">
                 <h1 class="titleAboutCompany">L'entreprise</h1>
-                <div class="contentAboutCompany">
                     <div class="itemAboutCompany">
                         <div class="textAboutCompany">
                             <h2>Introduction</h2>
@@ -32,7 +31,7 @@
                         </div>                             
                         <img class="imageAboutCompany" src="<?php echo e(asset('images/img6.jpg')); ?>" alt="img6">
                     </div>
-                    <div class="itemAboutCompany">
+                    <div class="itemAboutCompany videoItem">
                         <div class="textAboutCompany">
                             <h2>Qui sommes nous</h2>
                         </div>                             

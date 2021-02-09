@@ -22,7 +22,6 @@
                         Nous mettons à vos services notre analyse et une évaluation de vos besoins afin de créer des prestations au plus juste de vos attentes.
                         </p>    
                     </div>
-                    <img class="imageInfoServices" src="{{ asset('images/img10.jpg') }}" alt="img10">
                 </div>
                 <div class="iconContainer">
                     <a class="linkServices" href="{{ route('servicing') }}">
