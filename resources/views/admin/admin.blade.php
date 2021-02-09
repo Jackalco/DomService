@@ -39,7 +39,7 @@
                     </div>
                 @endforeach
             </section>
-                <a href="{{ route('logout') }}">Déconnexion</a>
+                <a class="addButton" href="{{ route('logout') }}">Déconnexion</a>
            
         </main>
         @include('layouts.footer')

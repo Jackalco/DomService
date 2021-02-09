@@ -44,6 +44,28 @@
 
                     </div>
                     <div class="itemForm">
+                        <div class="labelForm">Lattitude</div>
+                        <input class="inputForm {{ $errors->has('address') ? 'error' : '' }}" type="text" name="lat" id="lat" value="{{old('lat')?? $agency->lat}}">
+
+                        @if ($errors->has('lat'))
+                        <div class="errorInput">
+                            Ce champ est obligatoire.
+                        </div>
+                        @endif
+
+                    </div>
+                    <div class="itemForm">
+                        <div class="labelForm">Longitude</div>
+                        <input class="inputForm {{ $errors->has('address') ? 'error' : '' }}" type="text" name="lng" id="lng" value="{{old('lng')?? $agency->lng}}">
+
+                        @if ($errors->has('lng'))
+                        <div class="errorInput">
+                            Ce champ est obligatoire.
+                        </div>
+                        @endif
+
+                    </div>
+                    <div class="itemForm">
                         <div class="labelForm">Téléphone</div>
                         <input class="inputForm {{ $errors->has('phone') ? 'error' : '' }}" type="text" name="phone" id="phone" value="{{old('phone')?? $agency->phone}}">
 

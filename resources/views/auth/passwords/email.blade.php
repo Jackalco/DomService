@@ -1,47 +1,56 @@
-@extends('layouts.app')
+<!DOCTYPE html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/layouts.css')}}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/auth.css')}}">
+        <script src="https://kit.fontawesome.com/172e84d6d0.js" crossorigin="anonymous"></script>
+        <script src="{{ asset('js/navbar.js') }}"></script>
 
-@section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Reset Password') }}</div>
+        <title>DOM Services</title>
 
-                <div class="card-body">
+    </head>
+    <body>
+    @include('layouts.nav')
+        <main>
+        @guest                       
+            @if (Route::has('register'))
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                </li>
+            @endif
+        @endguest
+            <div class="container">
+                <h1>Réinitialisation du mot de passe</h1>
+                <div class="item">
                     @if (session('status'))
-                        <div class="alert alert-success" role="alert">
+                        <div class="error" role="alert">
                             {{ session('status') }}
                         </div>
                     @endif
-
+                </div>
                     <form method="POST" action="{{ route('password.email') }}">
                         @csrf
 
-                        <div class="form-group row">
-                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
-
-                                @error('email')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
+                        <div class="item">
+                            <label for="email" class="loginLabel">Adresse mail</label>
+                            <input id="email" type="email" class=" @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
+                            @error('email')
+                                <span class="error" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
                         </div>
 
-                        <div class="form-group row mb-0">
-                            <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
-                                    {{ __('Send Password Reset Link') }}
-                                </button>
-                            </div>
+                        <div class="item">
+                            <button type="submit" class="submitButton">
+                                Réinitialiser le mot de passe
+                            </button>
                         </div>
                     </form>
-                </div>
             </div>
-        </div>
-    </div>
-</div>
-@endsection
+        </main>
+    @include('layouts.footer')
+    </body> 
+</html>

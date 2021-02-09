@@ -190,15 +190,15 @@ aside {
     .recruitmentContent {
         padding: 20px;
         width: 25%;
-        font-size: 28px;
-        line-height: 50px;
+        font-size: 26px;
+        line-height: 45px;
     } 
 }
 
 @media only screen and (max-width: 1200px) {
 
     .buttonAbout {
-        font-size: 10px;
+        font-size: 14px;
         padding: 10px;
     }
 
@@ -235,7 +235,7 @@ aside {
     
     .agenciesImage {
         height: 350px;
-        width: 500px;
+        width: 450px;
         border-bottom: 1px solid black;
         border-top: 1px solid black;
         border-left: 1px solid black;
@@ -258,8 +258,8 @@ aside {
     .recruitmentContent {
         padding: 20px;
         width: 25%;
-        font-size: 28px;
-        line-height: 50px;
+        font-size: 24px;
+        line-height: 40px;
     }
   
 }
@@ -291,32 +291,35 @@ aside {
     }
     
     .franchiseContent {
-        height: 250px;
+        height: 200px;
         padding: 35px;
         border-radius: 10px;
     }
+
+    .franchiseContent h2 {
+        font-size: 20px;
+    }
     
     .franchiseContent p {
-        font-size: 15px;
-        margin-bottom: 30px;
-        line-height: 25px;
+        font-size: 12px;
+        margin-bottom: 20px;
+        line-height: 20px;
+    }
+
+    .agenciesContainer {
+        background-image: url('/images/world.jpg');
+        background-size: cover;
     }
     
     .agenciesImage {
-        height: 350px;
-        width: 500px;
-        border-bottom: 1px solid black;
-        border-top: 1px solid black;
-        border-left: 1px solid black;
+        display: none;
     }
     
     .agenciesContent {
         height: 350px;
         width: 500px;
-        text-align: center;
-        border-bottom: 1px solid black;
-        border-top: 1px solid black;
-        border-right: 1px solid black;
+        border: none;
+        background-color: transparent;
     }
     
     .agenciesContent h2 {
@@ -327,8 +330,8 @@ aside {
     .recruitmentContent {
         padding: 20px;
         width: 25%;
-        font-size: 28px;
-        line-height: 50px;
+        font-size: 25px;
+        line-height: 30px;
     }
  
 }
@@ -362,23 +365,6 @@ aside {
         line-height: 25px;
     }
     
-    .agenciesImage {
-        height: 350px;
-        width: 500px;
-        border-bottom: 1px solid black;
-        border-top: 1px solid black;
-        border-left: 1px solid black;
-    }
-    
-    .agenciesContent {
-        height: 350px;
-        width: 500px;
-        text-align: center;
-        border-bottom: 1px solid black;
-        border-top: 1px solid black;
-        border-right: 1px solid black;
-    }
-    
     .agenciesContent h2 {
         margin-top: 50px;
         margin-bottom: 100px;
@@ -387,8 +373,8 @@ aside {
     .recruitmentContent {
         padding: 20px;
         width: 25%;
-        font-size: 28px;
-        line-height: 50px;
+        font-size: 24px;
+        line-height: 35px;
     }
 
     

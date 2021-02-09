@@ -22,12 +22,14 @@ class AdminController extends Controller
             'city' => 'required',
             'email' => 'required|email',
             'phone' => 'required|regex:/^([0-9\s\-\+\(\)]*)$/|min:10',
-            'address'=>'required',
+            'address'=> 'required',
+            'lat' => 'required',
+            'lng' => 'required'
         ]);
 
 
         Agencies::insert(
-            ['city' => $request->get('city'), 'email' => $request->get('email'), 'phone' => $request->get('phone'), 'address' => $request->get('address')]
+            ['city' => $request->get('city'), 'email' => $request->get('email'), 'phone' => $request->get('phone'), 'address' => $request->get('address'), 'lat' => $request->get('lat'), 'lng' => $request->get('lng')]
         );
 
         return back()->with('success', 'L\'agence a bien été ajoutée.');
@@ -57,13 +59,15 @@ class AdminController extends Controller
             'email' => 'required|email',
             'phone' => 'required|regex:/^([0-9\s\-\+\(\)]*)$/|min:10',
             'address'=>'required',
+            'lat' => 'required',
+            'lng' => 'required'
         ]);
 
         $agency = Agencies::find($id);
 
         if($agency) {
             $agency->update(
-                ['city' => $request->get('city'), 'email' => $request->get('email'), 'phone' => $request->get('phone'), 'address' => $request->get('address')]
+                ['city' => $request->get('city'), 'email' => $request->get('email'), 'phone' => $request->get('phone'), 'address' => $request->get('address'), 'lat' => $request->get('lat'), 'lng' => $request->get('lng')]
             );   
         }
 

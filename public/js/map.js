@@ -24,10 +24,9 @@ function initializeMap() {
 		]
 	}]
 	var options = {
-		zoom: 6,
+		zoom: 4,
 		center: new google.maps.LatLng(46.227638, 2.213749000000007),
 		mapTypeId: google.maps.MapTypeId.ROADMAP,
-		//draggableCursor: 'crosshair ',
 		styles: styles,
 	};
 	map = new google.maps.Map(document.getElementById('map'), options);
