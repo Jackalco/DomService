@@ -10,6 +10,10 @@
     color: red;
 }
 
+.alert {
+    color: green;
+}
+
 .item {
     font-size: 20px;
     margin-bottom: 20px;

@@ -25,7 +25,7 @@
                 <h1>Réinitialisation du mot de passe</h1>
                 <div class="item">
                     @if (session('status'))
-                        <div class="error" role="alert">
+                        <div class="alert" role="alert">
                             {{ session('status') }}
                         </div>
                     @endif
@@ -37,7 +37,7 @@
                             <label for="email" class="loginLabel">Adresse mail</label>
                             <input id="email" type="email" class=" @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
                             @error('email')
-                                <span class="error" role="alert">
+                                <span class="alert" role="alert">
                                     <strong>{{ $message }}</strong>
                                 </span>
                             @enderror

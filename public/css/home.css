@@ -243,18 +243,12 @@ aside {
     .agenciesImage {
         height: 350px;
         width: 450px;
-        border-bottom: 1px solid black;
-        border-top: 1px solid black;
-        border-left: 1px solid black;
     }
     
     .agenciesContent {
         height: 350px;
         width: 500px;
         text-align: center;
-        border-bottom: 1px solid black;
-        border-top: 1px solid black;
-        border-right: 1px solid black;
     }
     
     .agenciesContent h2 {

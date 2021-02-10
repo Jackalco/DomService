@@ -12,67 +12,53 @@
 
     </head>
     <body>
+    @include('layouts.nav')
+        <main>
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-8">
-                    <div class="card">
-                        <div class="card-header">Réinitialisation</div>
-
-                        <div class="card-body">
-                            <form method="POST" action="{{ route('password.update') }}">
-                                @csrf
-
-                                <input type="hidden" name="token" value="{{ $token }}">
-
-                                <div class="form-group row">
-                                    <label for="email" class="col-md-4 col-form-label text-md-right">Adresse mail</label>
-
-                                    <div class="col-md-6">
-                                        <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ $email ?? old('email') }}" required autocomplete="email" autofocus>
-
-                                        @error('email')
-                                            <span class="invalid-feedback" role="alert">
-                                                <strong>{{ $message }}</strong>
-                                            </span>
-                                        @enderror
-                                    </div>
-                                </div>
-
-                                <div class="form-group row">
-                                    <label for="password" class="col-md-4 col-form-label text-md-right">Mot de passe</label>
-
-                                    <div class="col-md-6">
-                                        <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
-
-                                        @error('password')
-                                            <span class="invalid-feedback" role="alert">
-                                                <strong>{{ $message }}</strong>
-                                            </span>
-                                        @enderror
-                                    </div>
-                                </div>
-
-                                <div class="form-group row">
-                                    <label for="password-confirm" class="col-md-4 col-form-label text-md-right">Confirmer mot de passe</label>
-
-                                    <div class="col-md-6">
-                                        <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
-                                    </div>
-                                </div>
-
-                                <div class="form-group row mb-0">
-                                    <div class="col-md-6 offset-md-4">
-                                        <button type="submit" class="btn btn-primary">
-                                            Réinitialiser le mot de passe
-                                        </button>
-                                    </div>
-                                </div>
-                            </form>
+                <h1>Réinitialisation du mot de passe</h1>
+                <div class="item">
+                    @if (session('status'))
+                        <div class="error" role="alert">
+                            {{ session('status') }}
                         </div>
-                    </div>
+                    @endif
                 </div>
+                    <form method="POST" action="{{ route('password.update') }}">
+                        @csrf
+                        <input type="hidden" name="token" value="{{ $token }}">
+
+                        <div class="item">
+                            <label for="email" class="loginLabel">Adresse mail</label>
+                            <input id="email" type="email" class="@error('email') is-invalid @enderror" name="email" value="{{ $email ?? old('email') }}" required autocomplete="email" autofocus>
+                            @error('email')
+                                <span class="alert" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
+                        </div>
+                        <div class="item">
+                            <label for="email" class="loginLabel">Nouveau mot de passe</label>
+                            <input id="password" type="password" class="@error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
+                            @error('password')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
+                        </div>
+                        <div class="item">
+                            <label for="email" class="loginLabel">Confirmer mot de passe</label>
+                            <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
+                        </div>
+
+                        <div class="item">
+                            <button type="submit" class="submitButton">
+                                Réinitialiser le mot de passe
+                            </button>
+                        </div>
+                    </form>
             </div>
-        </div>
+        </main>
+    
         @include('layouts.footer')
     </body> 
 </html>

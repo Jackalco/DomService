@@ -8,7 +8,7 @@
         <script src="https://kit.fontawesome.com/172e84d6d0.js" crossorigin="anonymous"></script>
         <script src="{{ asset('js/navbar.js') }}"></script>
         <script type="text/javascript" src="{{ asset('js/jquery-2.2.3.min.js') }}"></script>
-        <script async defer type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC9wddaK3UtsavXGkhK9x8W5Td0cSVXVLI&callback=initializeMap"></script>
+        <script async defer type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDn0dInACL-r1elxp7vG6WqZnBND9OIrbg&callback=initializeMap"></script>
         <script type="text/javascript" src="{{ asset('js/map.js') }}"></script>
 
         <title>DOM Service</title>
