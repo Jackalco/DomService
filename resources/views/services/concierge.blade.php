@@ -24,7 +24,7 @@
                     <a class="summaryItem activeSummaryItem" href="{{ route('concierge') }}">Conciergerie</a>
                     <a class="summaryItem" href="{{ route('relationship-providers') }}">Mise en relation avec nos prestataires</a>
                 </div>
-                <div id="textService">
+                <div class="textService">
                     <div class="itemTextService">
                         <h1>Conciergerie</h1>
                         <p>
@@ -32,7 +32,10 @@
                         </p>
                     </div>
                 </div>
-                <img src="{{ asset('images/concierge.jpg') }}" class="imageServices" alt="Image conciergerie">
+                <div class="itemTextService">
+                    <img src="{{ asset('images/concierge.jpg') }}" class="imageServices" alt="Image conciergerie">
+                </div>
+                
             </section>
         </main>
         @include('layouts.footer')

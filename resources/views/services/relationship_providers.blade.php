@@ -24,7 +24,7 @@
                     <a class="summaryItem" href="{{ route('concierge') }}">Conciergerie</a>
                     <a class="summaryItem activeSummaryItem" href="{{ route('relationship-providers') }}">Mise en relation avec nos prestataires</a>
                 </div>
-                <div id="textService">
+                <div class="textService">
                     <div class="itemTextService">
                         <h1>Mise en relation avec nos prestataires</h1>
                         <p>

@@ -24,7 +24,7 @@
                     <a class="summaryItem" href="{{ route('concierge') }}">Conciergerie</a>
                     <a class="summaryItem" href="{{ route('relationship-providers') }}">Mise en relation avec nos prestataires</a>
                 </div>
-                <div id="textService">
+                <div class="textService">
                     <div class="itemTextService">
                         <h1>Repassage</h1>
                         <p>

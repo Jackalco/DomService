@@ -24,7 +24,7 @@
                     <a class="summaryItem" href="{{ route('concierge') }}">Conciergerie</a>
                     <a class="summaryItem" href="{{ route('relationship-providers') }}">Mise en relation avec nos prestataires</a>
                 </div>
-                <div id="textService">
+                <div class="textService">
                     <div class="itemTextService">
                         <h1>Courses et accompagnement sorties</h1>
                         <p>
@@ -37,8 +37,10 @@
                             Vous ne pouvez ou ne souhaitez pas vous rendre dans les magasins ? Votre auxiliaire de vie se charge de vos achats en toute autonomie, selon vos souhaits. Récupération de vos courses au drive ou achats chez des petits commerçants, DOM SERVICES s’adapte à vos besoins !
                         </p>
                     </div>
+                    <img src="{{ asset('images/shopping.jpg') }}" class="imageServices" alt="Image courses">
                 </div>
-                <img src="{{ asset('images/shopping.jpg') }}" class="imageServices" alt="Image courses">
+                
+                
             </section>
         </main>
         @include('layouts.footer')
