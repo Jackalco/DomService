@@ -8,7 +8,7 @@
         <script src="https://kit.fontawesome.com/172e84d6d0.js" crossorigin="anonymous"></script>
         <script src="<?php echo e(asset('js/navbar.js')); ?>"></script>
 
-        <title>DOM Services</title>
+        <title>DOM Services - Accueil</title>
 
     </head>
     <body>

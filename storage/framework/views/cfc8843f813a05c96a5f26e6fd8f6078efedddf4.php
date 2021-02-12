@@ -3,12 +3,13 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="DOM Services est un service d'aide à la personne depuis 2015.">
         <link rel="stylesheet" type="text/css" href="<?php echo e(asset('css/layouts.css')); ?>">
         <link rel="stylesheet" type="text/css" href="<?php echo e(asset('css/contact.css')); ?>">
         <script src="https://kit.fontawesome.com/172e84d6d0.js" crossorigin="anonymous"></script>
         <script src="<?php echo e(asset('js/navbar.js')); ?>"></script>
 
-        <title>DOM Services</title>
+        <title>DOM Services - Contact</title>
 
     </head>
     <body>
@@ -17,7 +18,7 @@
             <section id="contact">
                 <div class="container">
                     <h1>Contact</h1>
-                    <h3>Contactez nous pour un devis gratuit.</h3>
+                    <h3>Contactez nous pour un devis gratuit ou pour une demande de franchise.</h3>
                     <p>Nos équipes vous contacteront dans les plus brefs délais afin de vous proposer une aide personnalisée selon votre profil.</p>
                     <img src="<?php echo e(asset('images/contact.jpg')); ?>" alt="Image contact">
                 </div>

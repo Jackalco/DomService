@@ -1,4 +1,5 @@
-#containerAgencies {
+.containerAgencies {
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -38,9 +39,12 @@
     color:rgb(29, 36, 115);
 }
 
-.googleMap {
-    height: 500px;
-    width: 100%;
+.map {
+    display: block;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 2px;
 }
 
 @media only screen and (min-width: 1200px) {
@@ -50,6 +54,10 @@
 
     .title {
         font-size: 27px;
+    }
+
+    .map {
+        width: 70%;
     }
 }
 
@@ -61,6 +69,10 @@
     .title {
         font-size: 25px;
     }
+
+    .map {
+        width: 70%;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -70,5 +82,9 @@
     
     .title {
         font-size: 23px;
+    }
+
+    .map {
+        width: 80%;
     }
 }

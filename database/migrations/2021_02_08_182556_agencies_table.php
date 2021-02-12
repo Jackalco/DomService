@@ -19,8 +19,6 @@ class AgenciesTable extends Migration
             $table->string('phone');
             $table->string('email');
             $table->string('address');
-            $table->string('lat');
-            $table->string('lng');
         });
     }
 

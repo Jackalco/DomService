@@ -3,12 +3,13 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Rejoignez DOM Services !">
         <link rel="stylesheet" type="text/css" href="{{ asset('css/layouts.css')}}">
         <link rel="stylesheet" type="text/css" href="{{ asset('css/recruitment.css')}}">
         <script src="https://kit.fontawesome.com/172e84d6d0.js" crossorigin="anonymous"></script>
         <script src="{{ asset('js/navbar.js') }}"></script>
 
-        <title>DOM Service</title>
+        <title>DOM Service - Recrutement</title>
 
     </head>
     <body>

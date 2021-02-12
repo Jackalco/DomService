@@ -3,12 +3,13 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Page erreur 404">
         <link rel="stylesheet" type="text/css" href="{{ asset('css/layouts.css')}}">
         <link rel="stylesheet" type="text/css" href="{{ asset('css/error.css')}}">
         <script src="https://kit.fontawesome.com/172e84d6d0.js" crossorigin="anonymous"></script>
         <script src="{{ asset('js/navbar.js') }}"></script>
 
-        <title>DOM Services</title>
+        <title>DOM Services - Erreur 404</title>
 
     </head>
     <body>
