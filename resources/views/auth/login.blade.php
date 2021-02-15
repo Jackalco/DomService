@@ -24,9 +24,9 @@
                                     <div>
                                         <input id="email" type="email" class="@error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
                                         @error('email')
-                                            <span class="error" role="alert">
-                                                <strong>{{ $message }}</strong>
-                                            </span>
+                                            <div class="error" role="alert">
+                                                <strong>L'adresse mail ou le mot de passe est incorrect.</strong>
+                                            </div>
                                         @enderror
                                     </div>
                                 </div>
@@ -35,9 +35,9 @@
                                     <div>
                                         <input id="password" type="password" class="@error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
                                          @error('password')
-                                            <span class="error" role="alert">
-                                                <strong>{{ $message }}</strong>
-                                            </span>
+                                            <div class="error" role="alert">
+                                                <strong>L'adresse mail ou le mot de passe est incorrect.</strong>
+                                            </div>
                                         @enderror 
                                         </div> 
                                 </div>

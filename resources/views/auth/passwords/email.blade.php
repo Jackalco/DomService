@@ -15,19 +15,12 @@
     <body>
     @include('layouts.nav')
         <main>
-        @guest                       
-            @if (Route::has('register'))
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
-                </li>
-            @endif
-        @endguest
             <div class="container">
                 <h1>Réinitialisation du mot de passe</h1>
                 <div class="item">
                     @if (session('status'))
                         <div class="alert" role="alert">
-                            {{ session('status') }}
+                            Le mail de réinitialisation de mot de passe a bien été envoyé.
                         </div>
                     @endif
                 </div>
@@ -38,9 +31,9 @@
                             <label for="email" class="loginLabel">Adresse mail</label>
                             <input id="email" type="email" class=" @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
                             @error('email')
-                                <span class="alert" role="alert">
-                                    <strong>{{ $message }}</strong>
-                                </span>
+                                <div class="error" role="alert">
+                                    <strong>L'adresse mail est incorrect.</strong>
+                                </div>
                             @enderror
                         </div>
 
