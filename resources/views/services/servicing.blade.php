@@ -27,6 +27,7 @@
                 <div class="textService">
                     <div class="itemTextService">
                         <h1>Entretien du logement</h1>
+                        <img src="{{ asset('images/servicing.jpg') }}" class="imageServices" alt="Image entretien">
                         <p>
                             Vous n'avez plus le temps ni l'envie de faire votre ménage ? DOM SERVICES VOUS FACILITE VOTRE quotidien. Imaginez votre maison propre et rangée selon vos exigences ! Partagez-nous vos besoins et toutes vos envies concernant l’entretien de votre intérieur. Ménage, repassage, rangement, préparation des repas, ne vous occupez plus de rien ! 
                         </p>
@@ -35,7 +36,7 @@
                         </p>
                     </div>
                 </div>
-                <img src="{{ asset('images/servicing.jpg') }}" class="imageServices" alt="Image entretien">
+                
             </section>
         </main>
         @include('layouts.footer')

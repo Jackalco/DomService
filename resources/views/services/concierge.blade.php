@@ -27,13 +27,11 @@
                 <div class="textService">
                     <div class="itemTextService">
                         <h1>Conciergerie</h1>
+                        <img src="{{ asset('images/concierge.jpg') }}" class="imageServices" alt="Image conciergerie">
                         <p>
                             DOM SERVICES vous propose des services de conciergerie, ces derniers consistent à réaliser du ménage, jardinage et gardiennage. Nous mettons à votre disponibilité des personnes qualifiées à toutes périodes de l’année, suivant vos besoins.  
                         </p>
                     </div>
-                </div>
-                <div class="itemTextService">
-                    <img src="{{ asset('images/concierge.jpg') }}" class="imageServices" alt="Image conciergerie">
                 </div>
                 
             </section>

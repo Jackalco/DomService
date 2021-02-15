@@ -27,6 +27,7 @@
                 <div class="textService">
                     <div class="itemTextService">
                         <h1>Repassage</h1>
+                        <img src="{{ asset('images/ironing.jpg') }}" class="imageServices" alt="Image repassage">
                         <p>
                             La mission de nos assistant(e)s de vie est aussi d’assurer le lavage des vitres, le nettoyage des vêtements (programme des lessives, étendre le linge), le repassage du linge (cintré ou plié), le rangement des espaces à vivre (cuisine, chambre, salon, toilettes). L’objectif est de s’assurer que la maison reste un espace toujours propre et agréable à vivre que ce soit pour les personnes accompagnées et la visite de leurs proches. 
                         </p>
@@ -35,7 +36,7 @@
                         </p>
                     </div>
                 </div>
-                <img src="{{ asset('images/ironing.jpg') }}" class="imageServices" alt="Image repassage">
+                
             </section>
         </main>
         @include('layouts.footer')

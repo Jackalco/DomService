@@ -27,12 +27,13 @@
                 <div class="textService">
                     <div class="itemTextService">
                         <h1>Mise en relation avec nos prestataires</h1>
+                        <img src="{{ asset('images/relationship-providers.jpg') }}" class="imageServices" alt="Image relation prestataires">
                         <p>
                             Grace à notre réseau de proximité nous pouvons vous proposer des prestataires.
                         </p>
                     </div>
                 </div>
-                <img src="{{ asset('images/relationship-providers.jpg') }}" class="imageServices" alt="Image relation prestataires">
+                
             </section>
         </main>
         @include('layouts.footer')

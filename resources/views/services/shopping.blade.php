@@ -27,6 +27,8 @@
                 <div class="textService">
                     <div class="itemTextService">
                         <h1>Courses et accompagnement sorties</h1>
+                    <img src="{{ asset('images/shopping.jpg') }}" class="imageServices" alt="Image courses">
+
                         <p>
                             Le travail de nos auxiliaires de vie est d’assurer la réalisation des courses. Deux choix s’offrent aux bénéficiaires : l’auxiliaire de vie s’en charge seul si la personne est dans l’incapacité de se déplacer, temporairement ou durablement, ou conjointement si elle souhaite participer. Nos services prévoient le rangement des courses dans le logement et éviter tout risque de blessure ou chute. 
                         </p>
@@ -37,7 +39,7 @@
                             Vous ne pouvez ou ne souhaitez pas vous rendre dans les magasins ? Votre auxiliaire de vie se charge de vos achats en toute autonomie, selon vos souhaits. Récupération de vos courses au drive ou achats chez des petits commerçants, DOM SERVICES s’adapte à vos besoins !
                         </p>
                     </div>
-                    <img src="{{ asset('images/shopping.jpg') }}" class="imageServices" alt="Image courses">
+                    
                 </div>
                 
                 

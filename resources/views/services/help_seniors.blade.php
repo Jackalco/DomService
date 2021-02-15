@@ -28,6 +28,7 @@
                     <h1>Aide aux seniors</h1>
                     <div class="itemTextService">
                         <h2>Toillette</h2>
+                        <img src="{{ asset('images/help-seniors.jpg') }}" class="imageServices" alt="Image assistance seniors">
                         <p>
                             DOM SERVICES accompagnent les personnes âgées dans le processus de l’habillage. Il est important de s’assurer que le bénéficiaire soit vêtu correctement en respectant d’abord ses choix pour la tenue qu’il souhaite porter tout au long de la journée. DOM SERVICES accorde une importance particulière à l’habillage pour une question d’hygiène. Et sachant qu’une personne âgée est plus frileuse, les tenues sont adaptées selon la saison. Les auxiliaires de vie préconisent des vêtements adaptés à la journée pour laisser au placard le pyjama et la chemise de nuit même si la personne n’a aucune intention de sortir de son domicile. Il est important que le bénéficiaire se sente en confiance dans ses tenues et puisse se sentir confortable et présentable lors de la venue de la famille, d’un proche ou d’un voisin.
                         </p>
@@ -37,6 +38,7 @@
                     </div>
                     <div class="itemTextService">
                         <h2>Aide à la prise de repas</h2>
+                        
                         <p>
                             Demandez-nous ce qui vous aide et vous fait gagner du temps :
                         </p>
@@ -55,7 +57,7 @@
                         </p>
                     </div>
                 </div>
-                <img src="{{ asset('images/help-seniors.jpg') }}" class="imageServices" alt="Image assistance seniors">
+                
             </section>
         </main>
         @include('layouts.footer')
