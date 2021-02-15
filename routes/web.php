@@ -37,6 +37,6 @@ Route::get('/login', 'Auth\LoginController@show')->name('login')->middleware('gu
 Route::post('/login', 'Auth\LoginController@login')->name('login')->middleware('guest');
 Route::get('/logout', 'Auth\LoginController@logout')->name('logout');
 
-Auth::routes();
+Auth::routes(['register' => false]);
 
 

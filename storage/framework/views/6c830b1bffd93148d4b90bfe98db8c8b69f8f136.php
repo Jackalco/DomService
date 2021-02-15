@@ -17,7 +17,7 @@
         <main>
             <h1>Nos agences</h1>
             <p>Trouvez l'agence la plus proche de chez vous.</p>
-            <img src="<?php echo e(asset('images/world.jpg')); ?>" alt="Image de la Terre" class="map">
+            <img class="imageMap" src="<?php echo e(asset('images/world.jpg')); ?>"  alt="Image de la Terre">
             <section class="containerAgencies">
                 <?php $__currentLoopData = $agencies; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $agency): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                     <div class="containerAgency" value="<?php echo e($agency); ?>">

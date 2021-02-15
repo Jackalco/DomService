@@ -17,7 +17,7 @@
         <main>
             <h1>Nos agences</h1>
             <p>Trouvez l'agence la plus proche de chez vous.</p>
-            <img src="{{ asset('images/world.jpg') }}" alt="Image de la Terre" class="map">
+            <img class="imageMap" src="{{ asset('images/world.jpg') }}"  alt="Image de la Terre">
             <section class="containerAgencies">
                 @foreach($agencies as $agency)
                     <div class="containerAgency" value="{{ $agency }}">
