@@ -1,10 +1,10 @@
 <footer>
     <div id="socialMedia">
         <div>Retrouvez nous sur </div>
-        <a id="facebook" target="_blank" href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a>
+        <a id="facebook" target="_blank" href="https://www.facebook.com/Domservices44/"><i class="fab fa-facebook-square"></i></a>
         <a id="instagram" target="_blank" href="https://www.instagram.com/domservices44/"><i class="fab fa-instagram-square"></i></a>
         <a id="twitter" target="_blank" href="https://twitter.com/domservices44"><i class="fab fa-twitter-square"></i></a>
-        <a id="linkedin" target="_blank" href="#"><i class="fab fa-linkedin"></i></a>
+        <a id="linkedin" target="_blank" href="https://www.linkedin.com/company/dom-services-france"><i class="fab fa-linkedin"></i></a>
     </div> 
     <div id="footerAsideContainer">
         <div class="footerAside">
