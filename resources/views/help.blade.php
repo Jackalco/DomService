@@ -33,37 +33,37 @@
                                 <td><strong>Pour quoi ?</strong></td>
                             </tr>
                             <tr>
-                                <td><strong>Allocation de solidarité aux personnes âgées (<a href="https://www.service-public.fr/particuliers/vosdroits/F16871">ASPA</a>)</strong></td>
+                                <td><strong>Allocation de solidarité aux personnes âgées (<a target="_blank" href="https://www.service-public.fr/particuliers/vosdroits/F16871">ASPA</a>)</strong></td>
                                 <td>Personne âgée ayant une retraite modeste</td>
                                 <td>Assurer un revenu minimal</td>
                             </tr>
                             <tr>
-                                <td><strong>Prestation de compensation du handicap (<a href="https://www.service-public.fr/particuliers/vosdroits/F14202">PCH</a>)</strong></td>
+                                <td><strong>Prestation de compensation du handicap (<a target="_blank" href="https://www.service-public.fr/particuliers/vosdroits/F14202">PCH</a>)</strong></td>
                                 <td>Personne âgée handicapée de moins de 75 ans</td>
                                 <td>Financer des aides humaines et techniques, l’adaptation du logement et celle du véhicule</td>
                             </tr>
                             <tr>
-                                <td><strong>Allocation personnalisée d’autonomie (<a href="https://www.service-public.fr/particuliers/vosdroits/F10009">APA</a>)</strong></td>
+                                <td><strong>Allocation personnalisée d’autonomie (<a target="_blank" href="https://www.service-public.fr/particuliers/vosdroits/F10009">APA</a>)</strong></td>
                                 <td>Personne âgée dépendante de 60 ans et plus (GIR 1-4)</td>
                                 <td>Contribuer au financement de la prise en charge de la dépendance</td>
                             </tr>
                             <tr>
-                                <td><strong>Aide-ménagère à domicile (<a href="https://www.pour-les-personnes-agees.gouv.fr/vivre-a-domicile/aides-financieres/laide-menagere-a-domicile">aide sociale</a>)</strong></td>
+                                <td><strong>Aide-ménagère à domicile (<a target="_blank" href="https://www.pour-les-personnes-agees.gouv.fr/vivre-a-domicile/aides-financieres/laide-menagere-a-domicile">aide sociale</a>)</strong></td>
                                 <td>Personne âgée ayant besoin d’aide au quotidien de 60 ans et plus (GIR 5-6)</td>
                                 <td>Financer des heures d’aide à domicile</td>
                             </tr>
                             <tr>
-                                <td><strong><a href="https://www.pour-les-personnes-agees.gouv.fr/vivre-a-domicile/aides-financieres/les-aides-au-logement-domicile">Aides au logement</a></strong></td>
+                                <td><strong><a target="_blank" href="https://www.pour-les-personnes-agees.gouv.fr/vivre-a-domicile/aides-financieres/les-aides-au-logement-domicile">Aides au logement</a></strong></td>
                                 <td>Personne âgée qui a des difficultés à payer les dépenses liées au logement</td>
                                 <td>Alléger les frais de loyer, prêt ou tarif hébergement en maison de retraite</td>
                             </tr>
                             <tr>
-                                <td><strong>Aide sociale à l’hébergement (<a href="https://www.service-public.fr/particuliers/vosdroits/F2444">ASH</a>)</strong></td>
+                                <td><strong>Aide sociale à l’hébergement (<a target="_blank" href="https://www.service-public.fr/particuliers/vosdroits/F2444">ASH</a>)</strong></td>
                                 <td>Personne âgée de 60 ans et plus hébergée dans une maison de retraite</td>
                                 <td>Participer au financement du tarif hébergement en Ehpad ou résidence-autonomie</td>
                             </tr>
                             <tr>
-                                <td><strong><a href="https://www.pour-les-personnes-agees.gouv.fr/preserver-son-autonomie-s-informer-et-anticiper/amenager-son-logement-et-sequiper/amenager-son-logement">Aide à l’aménagement du logement</a></strong></td>
+                                <td><strong><a target="_blank" href="https://www.pour-les-personnes-agees.gouv.fr/preserver-son-autonomie-s-informer-et-anticiper/amenager-son-logement-et-sequiper/amenager-son-logement">Aide à l’aménagement du logement</a></strong></td>
                                 <td>Personne âgée qui a besoin d’adapter son domicile au vieillissement</td>
                                 <td>Faire des travaux pour sécuriser la maison</td>
                             </tr>
