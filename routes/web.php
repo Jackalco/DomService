@@ -16,6 +16,8 @@ Route::get('/services/relation-prestataire', 'PagesController@relationship_provi
 Route::get('/services/courses-accompagnement-sorties', 'PagesController@shopping')->name('shopping');
 
 Route::get('/entreprise', 'PagesController@company')->name('company');
+Route::get('/aides-financieres', 'PagesController@help')->name('help');
+Route::get('/aides-financieres/droits-seniors', 'PagesController@seniors_rights')->name('seniors-rights');
 Route::get('/mentions-legales', 'PagesController@legal_mention')->name('legal-mention');
 
 Route::get('/contact', 'ContactController@createForm')->name('contact');

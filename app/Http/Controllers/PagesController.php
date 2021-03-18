@@ -71,4 +71,14 @@ class PagesController extends Controller
     {
         return view('recruitment');
     }
+
+    public function help() 
+    {
+        return view('help');
+    }
+
+    public function seniors_rights() 
+    {
+        return view ('seniors_rights');
+    }
 }

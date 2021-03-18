@@ -8,8 +8,9 @@
     </div> 
     <div id="footerAsideContainer">
         <div class="footerAside">
-            <a class="footerAsideLink" href="{{ route('agencies') }}">Agences</a>
             <a class="footerAsideLink" href="{{ route('company') }}">L'entreprise</a>
+            <a class="footerAsideLink" href="{{ route('help') }}">Aides financières</a>
+            <a class="footerAsideLink" href="{{ route('agencies') }}">Agences</a>
             <a class="footerAsideLink" href="{{ route('recruitment') }}">Recrutement</a>
             <a class="footerAsideLink" href="{{ route('contact') }}">Contact</a>
         </div>
