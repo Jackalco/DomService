@@ -23,13 +23,11 @@ class AdminController extends Controller
             'email' => 'required|email',
             'phone' => 'required|regex:/^([0-9\s\-\+\(\)]*)$/|min:10',
             'address'=> 'required',
-            'lat' => 'required',
-            'lng' => 'required'
         ]);
 
 
         Agencies::insert(
-            ['city' => $request->get('city'), 'email' => $request->get('email'), 'phone' => $request->get('phone'), 'address' => $request->get('address'), 'lat' => $request->get('lat'), 'lng' => $request->get('lng')]
+            ['city' => $request->get('city'), 'email' => $request->get('email'), 'phone' => $request->get('phone'), 'address' => $request->get('address')]
         );
 
         return back()->with('success', 'L\'agence a bien été ajoutée.');

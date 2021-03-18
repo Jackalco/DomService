@@ -50,7 +50,7 @@
             <section class="recruitmentContainer">
                 <div class="layerRecruitment">
                     <div class="recruitmentContent">
-                        Vous avez remarquez l'une de nos annonces ou souhaitez soumettre une candidature spontanée ?<br>
+                        Vous avez remarqué l'une de nos annonces ou souhaitez soumettre une candidature spontanée ?<br>
                         <a class="buttonAbout" href="{{ route('recruitment') }}">Nous rejoindre</a>
                     </div>
                 </div>

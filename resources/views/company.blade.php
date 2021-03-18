@@ -27,7 +27,7 @@
                                 L'objectif principal de DOM SERVICES est le bien-être de ses bénéficiaires. Nous l'assurons en développant et améliorant ses services. Étant sur une démarche RSE, DOM SERVICES interviendra seulement sur Saint-Brévin.
                             </p>
                             <p>
-                                DOM SERVICES  est l'employeur du personnel lis à votre disposition, nous intervenons en tant que prestataire.
+                                DOM SERVICES est l'employeur du personnel à votre disposition, nous intervenons en tant que prestataire.
                             </p>
                         </div>                             
                         <img class="imageAboutCompany" src="{{ asset('images/img6.jpg') }}" alt="img6">
