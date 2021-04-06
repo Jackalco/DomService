@@ -59,6 +59,7 @@
             <aside>
                 <div class="downloadItem">
                     <a href="{{ asset('files/LIVRET_domservices_france.pdf') }}" download="LIVRET_domservices_france.pdf">Télécharger notre livret d'accueil</a>
+                    <a href="{{ asset('files/Livret_accueil.mp3') }}" download="Livret_accueil.mp3">Version audio</a>
                 </div>
                 <div class="itemAside">
                     <div>Avis clients</div>
